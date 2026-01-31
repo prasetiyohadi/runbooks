@@ -39,8 +39,6 @@ A comprehensive guide for understanding cloud networking fundamentals, from basi
 - ![GCP VPC Diagram](./assets/gcp-vpc.png) — GCP VPC architecture with subnets and routes
 - ![Azure VNet Diagram](./assets/azure-vnet.png) — Azure VNet with NSG placement
 - ![GCP VPC vs Azure VNet](./assets/vpc-vnet-comparison.png) — Architecture comparison
-- ![Network Routing Example](./assets/network-routing.jpeg) — Local routing example
-- ![ipcalc Output](./assets/ipcalc.jpeg) — IP calculation tool example
 
 ---
 

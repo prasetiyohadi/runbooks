@@ -1,0 +1,3151 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="utf-8">
+
+<!-- 
+	This website is built upon the "Website Base for TYPO3" developed by https://www.sgalinski.de/typo3-agentur/
+
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2026 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+<link rel="icon" href="/_assets/edd904b3072f92be628aca13b9af53d8/Images/Favicon.ico" type="image/vnd.microsoft.icon">
+<title>404</title>
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="generator" content="TYPO3 CMS">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="https://computop.com/fileadmin/user_upload/Startseite/Bilder/CT_Keyvisual_2023_Chameleon_FINAL_b_social_1200x628.jpg">
+<meta property="og:image:url" content="https://computop.com/fileadmin/user_upload/Startseite/Bilder/CT_Keyvisual_2023_Chameleon_FINAL_b_social_1200x628.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://computop.com/fileadmin/user_upload/Startseite/Bilder/CT_Keyvisual_2023_Chameleon_FINAL_b_social_1200x628.jpg">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="cf-2fa-verify" content="E1025yh69awegh69j8">
+
+
+	<link rel="stylesheet" type="text/css" media="all" href="/typo3temp/scriptmerger/uncompressed/head-6418674e241ca6ee00ad3e63f7f9fc5b.merged.css" crossorigin="anonymous" />
+<link rel="preconnect" href="//app.usercentrics.eu">
+		<link rel="preconnect" href="//api.usercentrics.eu">
+		<link rel="preload" href="//app.usercentrics.eu/browser-ui/latest/loader.js" as="script">
+		<link rel="preconnect" href="//mautic.computop.com ">
+		<!-- Load usercentrics cmp -->
+		<script data-ignore="1" id="usercentrics-cmp" data-settings-id="TSYtu-buW" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" async></script>
+		<!-- End usercentrics cmp -->
+		<!-- Matomo Tag Manager -->
+		<script data-ignore="1">
+		var _mtm = window._mtm = window._mtm || [];
+		_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.async=true; g.src='https://stats.computop.com/js/container_1Z1GeUeK.js'; s.parentNode.insertBefore(g,s);
+		</script>
+		<!-- End Matomo Tag Manager -->
+
+<link rel="canonical" href="https://computop.com/de/404/">
+
+<link rel="alternate" hreflang="x-default" href="https://computop.com/de/404/">
+<link rel="alternate" hreflang="de-DE" href="https://computop.com/de/404/">
+<link rel="alternate" hreflang="en-US" href="https://computop.com/en/404/">
+<!-- This site is optimized with the Yoast SEO for TYPO3 plugin - https://yoast.com/typo3-extensions-seo/ -->
+<script type="application/ld+json">[{"@context":"https:\/\/www.schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/computop.com\/de\/","name":"Computop"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/computop.com\/de\/404\/","name":"404"}}]}]</script>
+<script defer src="/typo3temp/scriptmerger/uncompressed/body-ef87361948222030c8f18ba55becb778.merged.js" crossorigin="anonymous"></script>
+</head>
+<body class="page-202 template-default pagelevel-1 layout-4 " itemscope itemtype="http://schema.org/WebPage">
+
+
+
+
+<div class="default-page-wrap">
+	<header id="header" class="header">
+		<div id="contact-bar" class="contact-bar"><div class="container clearfix"><ul class="contact-bar-content"><li><a href="#" data-mailto-token="hvdgoj5nvgznVxjhkpojk9xjh" data-mailto-vector="-5" id="contactBarMailLink" title="sales@computop.com" class="mail">sales&#64;computop&#46;com</a></li><li><a href="tel:+49951980090" id="contactBarPhoneLink" title="+49 951 98009-0" class="phone">+49 951 98009-0</a></li><li><a href="https://paygate.computop.de/analytics/" target="_blank" title="Login" class="login" rel="noreferrer">Login</a></li></ul></div><a href="/payment-insights/" id="payment-insights" class="payment-insights btn btn-secondary" title="Payment Insights">Payment Insights</a></div>
+		<div class="container">
+			<nav id="main-navigation" class="navbar navbar-expand-md navbar-dark">
+				<a id="logo" class="navbar-brand " title="Computop" href="/de/">
+					<img class="logo" alt="Computop Logo" src="/_assets/edd904b3072f92be628aca13b9af53d8/Images/Logo.svg" width="228" height="64" />
+				</a>
+				<div id="navbar" class="collapse navbar-collapse navbar-center">
+					
+							<ul id="mainNavigation" class="navbar-nav">
+	
+		<li class="nav-item  dropdown" data-uid="4">
+			<a class="nav-link dropdown-toggle" href="/de/loesungen/"
+			   target="" title="Paygate" data-toggle="dropdown">
+				Paygate
+			</a>
+			
+				
+<div class="dropdown-menu" aria-labelledby="navbar-4">
+	<div class="container">
+		<div class="flyout-row row no-gutters">
+			<ul class="col-md-3">
+				<li class="dropdown-list dropdown-heading">
+					<a class="dropdown-item" href="/de/loesungen/" target="" title="Paygate">Paygate</a>
+				</li>
+				
+					<li class="dropdown-list position-static dropdown" has-children="5" data-uid="16">
+						
+								<a class="dropdown-item  dropdown-toggle" href="/de/omnichannel-payment/" target="" title="Omnichannel Payment">Omnichannel Payment</a>
+								<div class="dropdown-menu">
+									<ul>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/omnichannel-payment/" target="" title="Omnichannel">Omnichannel</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Omnichannel</div>
+																
+																
+																	<div>Online, mobile, POS: bei uns bekommen Sie umfassende Payment Lösungen für alle Verkaufskanäle. Abgebildet in einer zentralen Datenbank.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/5/2/csm_Computop-Omnichannel-flyout-smaller_6dfa2f9a5c.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="483" height="878" alt="" src="/fileadmin/_processed_/5/2/csm_Computop-Omnichannel-flyout-smaller_094c1526c2.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/omnichannel-payment/e-commerce/" target="" title="E-Commerce">E-Commerce</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">E-Commerce</div>
+																
+																
+																	<div>Auf den passenden Zahlungsmittelmix kommt es an. Die Verfügbarkeit der favorisierten Bezahloption ist
+kaufentscheidend. Wir beraten Sie länder- und zielgruppenspezifisch.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/2/8/csm_Computop-E-Commerce_flyout-smaller_157f5180aa.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="483" height="878" alt="" src="/fileadmin/_processed_/2/8/csm_Computop-E-Commerce_flyout-smaller_aef76067e4.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/omnichannel-payment/mobile-commerce/" target="" title="Mobile Commerce">Mobile Commerce</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Mobile Commerce</div>
+																
+																
+																	<div>Der mobile Check-out: klick, klick, gekauft. Unsere Mobile-Commerce-Zahlarten sind besonders einfach, komfortabel
+und dennoch sicher.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/f/d/csm_Computop-Mobile-Commerce-flyout-smaller_9ae140e7f1.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="483" height="878" alt="" src="/fileadmin/_processed_/f/d/csm_Computop-Mobile-Commerce-flyout-smaller_c09b5218b5.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/omnichannel-payment/payment-by-link/" target="" title="Payment by Link">Payment by Link</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Payment by Link</div>
+																
+																
+																	<div>Warten Sie nicht auf Käufer – bringen Sie Angebote &amp; Checkout direkt zu Ihren Kunden! Mit Payment by Link profitieren Sie vom großen Potenzial des Contextual Commerce und steigern Ihren Umsatz.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/d/5/csm_Computop-Pay-by-Link-Flyout_a9bf26ba50.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="484" height="880" alt="" src="/fileadmin/user_upload/Zahlungsabwicklung/Flyouts/Computop-Pay-by-Link-Flyout.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/point-of-sale/" target="" title="Point of Sale">Point of Sale</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Point of Sale</div>
+																
+																
+																	<div>Der Point of Sale verändert sich täglich: neue kanalübergreifende Servicekonzepte, neue Zahlarten für Ihre Kunden – neue Möglichkeiten für Sie.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/user_upload/Zahlungsabwicklung/Rework-POS/CT_Keyvisual_POS_2021_Flyou_440x880px.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="440" height="800" alt="" src="/fileadmin/_processed_/6/2/csm_CT_Keyvisual_POS_2021_Flyou_440x880px_a54269c96a.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+									</ul>
+								</div>
+							
+					</li>
+				
+					<li class="dropdown-list position-static dropdown" has-children="4" data-uid="507">
+						
+								<a class="dropdown-item  dropdown-toggle" href="/de/point-of-sale/" target="" title="Point of Sale">Point of Sale</a>
+								<div class="dropdown-menu">
+									<ul>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/point-of-sale/" target="" title="Computop POS">Computop POS</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Point of Sale</div>
+																
+																
+																	<div>Der Point of Sale verändert sich täglich: neue kanalübergreifende Servicekonzepte, neue Zahlarten für Ihre Kunden – neue Möglichkeiten für Sie.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/user_upload/Zahlungsabwicklung/Rework-POS/CT_Keyvisual_POS_2021_Flyou_440x880px.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="440" height="800" alt="" src="/fileadmin/_processed_/6/2/csm_CT_Keyvisual_POS_2021_Flyou_440x880px_a54269c96a.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/point-of-sale/computop-cloud-pos/" target="" title="Computop Cloud POS">Computop Cloud POS</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Computop Cloud POS Interface</div>
+																
+																
+																	<div>Nutzen Sie Ihr webbasiertes ERP- bzw. Shopsystem, um Kartenzahlungen im stationären Geschäft zu akzeptieren. Die Kommunikation Ihrer Terminals am Point of Sale erfolgt via Internet direkt über das Computop Paygate und macht traditionelle Schnittstellen wie OPI oder ZVT überflüssig.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/user_upload/Landing-Pages/Cloud_POS/CT_KV_Cloud_POS_Flyout_484x880px.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="302" height="549" alt="" src="/fileadmin/_processed_/d/b/csm_CT_KV_Cloud_POS_Flyout_484x880px_9a294c8293.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/point-of-sale/computop-phone-pos/" target="" title="Computop PhonePOS">Computop PhonePOS</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																
+																	<div>Mit Computop PhonePOS verwandeln Sie handelsübliche Android-Smartphones oder -Tablets in professionelle Bezahlterminals!</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/user_upload/Support/Developers/Download/noindex/Phone_POS_Flyout.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="275" height="500" alt="" src="/fileadmin/_processed_/5/9/csm_Phone_POS_Flyout_be1d47a717.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="https://computop.com/de/point-of-sale#terminals" target="" title="Terminals">Terminals</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">POS Terminals</div>
+																
+																
+																	<div>Egal, welches Geschäftskonzept Sie verfolgen:
+Computop hält für jeden Anwendungsbereich das passende POS Terminal bereit.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/user_upload/Zahlungsabwicklung/Flyouts/CT_KV_Terminal_Flyout_880x484px.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="420" height="764" alt="" src="/fileadmin/_processed_/2/5/csm_CT_KV_Terminal_Flyout_880x484px_fe8fe496ee.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+									</ul>
+								</div>
+							
+					</li>
+				
+					<li class="dropdown-list position-static dropdown" has-children="2" data-uid="28">
+						
+								<a class="dropdown-item  dropdown-toggle" href="/de/analytics-reports/" target="" title="Analytics &amp; Reports">Analytics &amp; Reports</a>
+								<div class="dropdown-menu">
+									<ul>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/analytics-reports/computop-360/" target="" title="Computop Analytics">Computop Analytics</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Analytics &amp; Reports</div>
+																
+																
+																	<div>Computop Analytics &amp; Computop 360° bringen Struktur in die Datenflut und sorgen für maximale Transparenz.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/user_upload/Zahlungsabwicklung/Flyouts/Computop_Analytics_Flyout_500x275px.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="275" height="500" alt="" src="/fileadmin/user_upload/Zahlungsabwicklung/Flyouts/Computop_Analytics_Flyout_500x275px.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/analytics-reports/computop-360/" target="" title="Computop 360°">Computop 360°</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Computop 360°</div>
+																
+																
+																	<div>Mit unserem browserbasierten, hochflexiblen Business Intelligence Tool identifizieren Sie wertvolle Optimierungspotenziale, steigern die Kaufabschlussraten und sparen unnötige Kosten ein.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/b/c/csm_CT_360_Flyout_880px_a6c0d25d17.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="484" height="880" alt="" src="/fileadmin/user_upload/Computop_360/CT_360_Flyout_880px.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+									</ul>
+								</div>
+							
+					</li>
+				
+					<li class="dropdown-list position-static dropdown" has-children="1" data-uid="53">
+						
+								<a class="dropdown-item  dropdown-toggle" href="/de/betrugspraevention/" target="" title="Betrugsprävention">Betrugsprävention</a>
+								<div class="dropdown-menu">
+									<ul>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/betrugspraevention/" target="" title="Computop Anti-Fraud">Computop Anti-Fraud</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Betrugsprävention</div>
+																
+																
+																	<div>Betrugsprävention ist ein Balanceakt: Mit hocheffizienten Tools und einem riesigen Erfahrungsschatz reduzieren wir betrügerische
+Aktivitäten auf ein Minimum, ohne dabei echte Kaufabschlüsse zu verhindern. So holen wir das Optimum für Sie raus.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/user_upload/Betrugspraevention/Bilder/Computop-Fraud-Prevention-Flyout_880x484px.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="330" height="600" alt="" src="/fileadmin/user_upload/Betrugspraevention/Bilder/Computop-Fraud-Prevention-Flyout_880x484px.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+									</ul>
+								</div>
+							
+					</li>
+				
+					<li class="dropdown-list position-static dropdown" has-children="3" data-uid="645">
+						
+								<a class="dropdown-item  dropdown-toggle" href="/de/integration/" target="" title="Integration">Integration</a>
+								<div class="dropdown-menu">
+									<ul>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/integration/shop-plugins/" target="" title="Shop Integration">Shop Integration</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Shop Plugins</div>
+																
+																
+																	<div>Unsere Plugins lassen sich im Handumdrehen in Ihren Onlineshop integrieren und bringen mit: Zeitersparnis, automatische Updates, Betrugsprävention und Kompatibilität mit allen führenden Shop-Systemen.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/1/8/csm_Computop-Shop-Integration_Flyout_smaller_be6aff3424.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="330" height="600" alt="" src="/fileadmin/_processed_/1/8/csm_Computop-Shop-Integration_Flyout_smaller_88cb4e742e.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/integration/hosted-payment-page/" target="" title="Hosted Payment Page">Hosted Payment Page</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Hosted Payment Page</div>
+																
+																
+																	<div>Nahtloses Online-Shopping für Ihre Kunden, minimaler Integrationsaufwand für Ihr Entwickler-Team.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/f/e/csm_Computop-Hosted-Payment-Page-Flyout-600x600_d855e552e4.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="330" height="600" alt="" src="/fileadmin/_processed_/f/e/csm_Computop-Hosted-Payment-Page-Flyout-600x600_bd6b843999.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/computop-settlement-file/" target="" title="Computop Settlement File">Computop Settlement File</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Computop Settlement File</div>
+																
+																
+																	<div>Zahlungseingänge verschiedener Acquirer und Zahlarten zu verarbeiten kann aufwändig sein. Das Computop Settlement File erledigt diese Aufgabe einfach und schnell für Sie!</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/8/a/csm_CT_CTSF_Flyout_484x880px_8a31933946.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="484" height="880" alt="" src="/fileadmin/user_upload/Landing-Pages/Computop_Settlement_File/CT_CTSF_Flyout_484x880px.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+									</ul>
+								</div>
+							
+					</li>
+				
+					<li class="dropdown-list position-static dropdown" has-children="19" data-uid="51">
+						
+								<a class="dropdown-item  dropdown-toggle" href="/de/zahlarten/" target="" title="Zahlarten">Zahlarten</a>
+								<div class="dropdown-menu">
+									<ul>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/" target="" title="Alle Zahlarten">Alle Zahlarten</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/amazon-pay/" target="" title="Amazon Pay">Amazon Pay</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/apple-pay/" target="" title="Apple Pay">Apple Pay</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/click-to-pay/" target="" title="Click to Pay">Click to Pay</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/computop-pay-by-bank/" target="" title="Pay by Bank">Pay by Bank</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/easycredit-ratenkauf/" target="" title="easyCredit-Ratenkauf">easyCredit-Ratenkauf</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/eps/" target="" title="eps">eps</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/girocard-im-e-commerce/" target="" title="girocard">girocard</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/google-pay/" target="" title="Google Pay">Google Pay</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/ideal/" target="" title="iDEAL">iDEAL</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/klarna/" target="" title="Klarna">Klarna</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/kredit-und-debitkarte/" target="" title="Kredit- und Debitkarte">Kredit- und Debitkarte</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/ueber-uns/partner/paypal/" target="" title="PayPal">PayPal</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/paysafecard/" target="" title="paysafecard">paysafecard</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/postfinance/" target="" title="PostFinance">PostFinance</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/przelewy24/" target="" title="Przelewy24">Przelewy24</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/sepa-lastschrift/" target="" title="SEPA-Lastschrift">SEPA-Lastschrift</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/twint/" target="" title="TWINT">TWINT</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/zahlarten/wero/" target="" title="Wero">Wero</a>
+												
+											</li>
+										
+									</ul>
+								</div>
+							
+					</li>
+				
+					<li class="dropdown-list position-static dropdown" has-children="8" data-uid="5">
+						
+								<a class="dropdown-item  dropdown-toggle" href="/de/branchen/" target="" title="Branchen">Branchen</a>
+								<div class="dropdown-menu">
+									<ul>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/branchen/banken-whitelabel/" target="" title="Banken / Whitelabel">Banken / Whitelabel</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Banken / Whitelabel</div>
+																
+																
+																	<div>Unser Paygate – Ihr Look: Mit unserem Whitelabel Konzept bieten Sie Ihren Kunden erstklassige Payment Lösungen,
+Betrugsprävention, Reporting und Support.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/0/a/csm_Computop-Banking-Whitelabel-flyout_cc75af6a8f.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="242" height="440" alt="" src="/fileadmin/_processed_/0/a/csm_Computop-Banking-Whitelabel-flyout_359c6c3fd1.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/branchen/digital-entertainment/" target="" title="Digital Entertainment">Digital Entertainment</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Digital Entertainment</div>
+																
+																
+																	<div>Sie brauchen einen risikooptimierten, zielgruppengerechten, globalen Zahlarten-Mix samt effizienter Betrugsprävention?
+Dann sind Sie hier richtig.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/f/1/csm_Computop-Digital-Entertainment-flyout_b272b55d0f.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="242" height="440" alt="" src="/fileadmin/_processed_/f/1/csm_Computop-Digital-Entertainment-flyout_5993d18ee6.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/branchen/elektronik/" target="" title="Elektronik">Elektronik</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Elektronik</div>
+																
+																
+																	<div>Hochpreisige Warenkörbe brauchen hochsichere Bezahloptionen. Online, mobile und am Point of Sale. Welche Rolle
+dabei die Kreditkarte spielt, lesen Sie hier.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/a/d/csm_Computop-Elektronik-flyout_ec33e6350f.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="242" height="440" alt="" src="/fileadmin/_processed_/a/d/csm_Computop-Elektronik-flyout_b981cdbd4b.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/branchen/fashion-lifestyle/" target="" title="Fashion &amp; Lifestyle">Fashion &amp; Lifestyle</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Fashion &amp; Lifestyle</div>
+																
+																
+																	<div>Online, mobile, Point of Sale – die Kanäle fließen zusammen. Nutzen Sie diese Entwicklung für Instore-Retouren, Clickand-
+Collect und mehr. Wir helfen Ihnen mit maßgeschneidertem Omnichannel Payment.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/7/2/csm_computop-fashion-lifestyle-flyout_4e73722a2a.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="242" height="440" alt="" src="/fileadmin/_processed_/7/2/csm_computop-fashion-lifestyle-flyout_546a98e0a6.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/branchen/healthcare/" target="" title="Healthcare">Healthcare</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Healthcare</div>
+																
+																
+																	<div>Omnichannel Payment ist aus vielen Branchen gar nicht mehr wegzudenken. Auch der Healthcare-Sektor ist gefordert, seinen Patienten Payment Optionen auf allen Kanälen anzubieten und positive Bezahlerlebnisse zu schaffen. Und das unter allerhöchsten Sicherheitsbedingungen. Denn medizinische Daten sind sensible Daten.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/1/2/csm_Computop-Healthcare-flyout_393f701583.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="242" height="440" alt="" src="/fileadmin/_processed_/1/2/csm_Computop-Healthcare-flyout_45c4c0fec7.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/branchen/hospitality/" target="" title="Hospitality">Hospitality</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Hospitality</div>
+																
+																
+																	<div>Wer über Grenzen reist, will grenzenlos bezahlen. Mit dem Computop Paygate wird das Bezahlen für Ihre Gäste so einfach wie nie – egal ob sie aus Europa, Asien, Amerika oder Australien stammen.
+</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/2/4/csm_CT_Keyvisual_Hospitality_Flyout_600x600px_3064a2ff80.webp" />
+<img  class="image-embed-item img-fluid image-no-svg" width="330" height="600" alt="" src="/fileadmin/_processed_/2/4/csm_CT_Keyvisual_Hospitality_Flyout_600x600px_4fd4299b48.webp" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/branchen/mobility/" target="" title="Mobility">Mobility</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Mobility</div>
+																
+																
+																	<div>Ob im öffentlichen Nahverkehr, beim Car- oder Bikesharing oder in der Luft - moderne Mobilitätsdienstleistungen sind vielfältig. Mit unseren flexiblen Payment-Lösungen werden Zahlungen so einfach und bequem wie möglich.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/6/1/csm_Computop-Flyout-Mobility_c31ccc5bff.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="243" height="441" alt="" src="/fileadmin/_processed_/6/1/csm_Computop-Flyout-Mobility_1f01549ed4.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+											<li class="dropdown-list position-static dropdown">
+												<a class="dropdown-item " href="/de/branchen/versicherungen/" target="" title="Versicherungen">Versicherungen</a>
+												
+													<div class="dropdown-menu preview">
+														<div class="row no-gutters">
+															<div class="flyout-text-wrapper col-6">
+																
+																	<div class="h4">Versicherungen</div>
+																
+																
+																	<div>Die einfache Lösung zur effizienten und flexiblen Erhebung von Beitragszahlungen. Perfekt abgestimmt auf Kundenbedürfnisse, Produkte und Vertriebskanäle.</div>
+																
+															</div>
+															<div class="flyout-image-wrapper col-6">
+																<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/c/b/csm_CT_Insurance_Flyout_485x880_801299e580.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="242" height="440" alt="" src="/fileadmin/_processed_/c/b/csm_CT_Insurance_Flyout_485x880_a1f231dd75.jpg" loading="lazy" /></picture>
+															</div>
+														</div>
+													</div>
+												
+											</li>
+										
+									</ul>
+								</div>
+							
+					</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+			
+		</li>
+	
+		<li class="nav-item  dropdown" data-uid="54">
+			<a class="nav-link dropdown-toggle" href="/de/support/"
+			   target="" title="Support" data-toggle="dropdown">
+				Support
+			</a>
+			
+				
+<div class="dropdown-menu" aria-labelledby="navbar-54">
+	<div class="container">
+		<div class="flyout-row row no-gutters">
+			<ul class="col-md-3">
+				<li class="dropdown-list dropdown-heading">
+					<a class="dropdown-item" href="/de/support/" target="" title="Support">Support</a>
+				</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="39">
+						
+								<a class="dropdown-item dropdown-heading " href="/de/support/ansprechpartner/" target="" title="Ansprechpartner">Ansprechpartner</a>
+								
+							
+					</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="275">
+						
+								<a class="dropdown-item dropdown-heading " href="https://developer.computop.com" target="" title="Developer">Developer</a>
+								
+							
+					</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="38">
+						
+								<a class="dropdown-item dropdown-heading " href="/de/support/developers-downloads/" target="" title="Downloads">Downloads</a>
+								
+							
+					</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="37">
+						
+								<a class="dropdown-item dropdown-heading " href="https://support.computop.com/hc/de" target="" title="Kundenservice">Kundenservice</a>
+								
+							
+					</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+			
+		</li>
+	
+		<li class="nav-item  dropdown" data-uid="7">
+			<a class="nav-link dropdown-toggle" href="/de/karriere/"
+			   target="" title="Karriere" data-toggle="dropdown">
+				Karriere
+			</a>
+			
+				
+<div class="dropdown-menu" aria-labelledby="navbar-7">
+	<div class="container">
+		<div class="flyout-row row no-gutters">
+			<ul class="col-md-3">
+				<li class="dropdown-list dropdown-heading">
+					<a class="dropdown-item" href="/de/karriere/" target="" title="Karriere">Karriere</a>
+				</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="928">
+						
+								<a class="dropdown-item dropdown-heading " href="/de/karriere/benefits/" target="" title="Benefits">Benefits</a>
+								
+							
+					</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="961">
+						
+								<a class="dropdown-item dropdown-heading " href="/de/karriere/bewerbungsablauf/" target="" title="Bewerbungsablauf">Bewerbungsablauf</a>
+								
+							
+					</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="44">
+						
+								<a class="dropdown-item dropdown-heading " href="/de/karriere/freie-stellen/" target="" title="Freie Stellen">Freie Stellen</a>
+								
+							
+					</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+			
+		</li>
+	
+		<li class="nav-item  dropdown" data-uid="49">
+			<a class="nav-link dropdown-toggle" href="/de/ueber-uns/partner/"
+			   target="" title="Partner" data-toggle="dropdown">
+				Partner
+			</a>
+			
+				
+<div class="dropdown-menu" aria-labelledby="navbar-49">
+	<div class="container">
+		<div class="flyout-row row no-gutters">
+			<ul class="col-md-3">
+				<li class="dropdown-list dropdown-heading">
+					<a class="dropdown-item" href="/de/ueber-uns/partner/" target="" title="Partner">Partner</a>
+				</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="1304">
+						
+								<a class="dropdown-item dropdown-heading " href="https://computop.com/de/ueber-uns/partner#featured-partners" target="" title="Featured Partners">Featured Partners</a>
+								
+							
+					</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+			
+		</li>
+	
+		<li class="nav-item  dropdown" data-uid="434">
+			<a class="nav-link dropdown-toggle" href="/de/ueber-uns/das-unternehmen/"
+			   target="" title="Die Payment People" data-toggle="dropdown">
+				Über uns
+			</a>
+			
+				
+<div class="dropdown-menu" aria-labelledby="navbar-434">
+	<div class="container">
+		<div class="flyout-row row no-gutters">
+			<ul class="col-md-3">
+				<li class="dropdown-list dropdown-heading">
+					<a class="dropdown-item" href="/de/ueber-uns/das-unternehmen/" target="" title="Die Payment People">Die Payment People</a>
+				</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="435">
+						
+								<a class="dropdown-item dropdown-heading " href="/de/ueber-uns/das-unternehmen/" target="" title="Das Unternehmen">Das Unternehmen</a>
+								
+							
+					</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="63">
+						
+								<a class="dropdown-item dropdown-heading " href="/de/ueber-uns/newsletter/" target="" title="Newsletter">Newsletter</a>
+								
+							
+					</li>
+				
+					<li class="dropdown-list position-static dropdown" has-children="3" data-uid="745">
+						
+								<a class="dropdown-item  dropdown-toggle" href="/de/ueber-uns/presse/" target="" title="Presse">Presse</a>
+								<div class="dropdown-menu">
+									<ul>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/ueber-uns/presse/" target="" title="Pressemitteilungen">Pressemitteilungen</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="/de/karriere/ueber-uns/presse/media-download/" target="" title="Media Download">Media Download</a>
+												
+											</li>
+										
+											<li class="dropdown-list position-static ">
+												<a class="dropdown-item " href="https://computop.com/payment-insights/de" target="" title="Payment Insights">Payment Insights</a>
+												
+											</li>
+										
+									</ul>
+								</div>
+							
+					</li>
+				
+					<li class="dropdown-list position-static dropdown" has-children="0" data-uid="577">
+						
+								<a class="dropdown-item dropdown-heading " href="/de/ueber-uns/das-unternehmen/zertifizierungen/" target="" title="Zertifizierungen">Zertifizierungen</a>
+								
+									<div class="dropdown-menu preview preview--level-2">
+										<div class="row no-gutters">
+											<div class="flyout-text-wrapper col-6">
+												
+													<div class="h4">Zertifizierungen</div>
+												
+												
+													<div>Im Zuge der Digitalisierung spielt der Schutz sensibler Daten eine immer wichtigere Rolle. Computop und seine Payment-Plattform Paygate werden deshalb regelmäßig durch externe Sicherheits-Audits überprüft. Mit Zertifizierungen nach PCI DSS, PCI P2PE, PCI Pin und ISO/IEC­­ 27001 setzen wir Sicherheits- und Qualitätsstandards im Payment-Sektor.</div>
+												
+											</div>
+											<div class="flyout-image-wrapper col-6">
+												<picture><source media="(max-width: 480px)" srcset="/fileadmin/_processed_/1/6/csm_Flyout_Zertifikate_484x880_393f0e93c1.jpg" />
+<img  class="image-embed-item img-fluid image-no-svg" width="484" height="484" alt="" src="/fileadmin/_processed_/1/6/csm_Flyout_Zertifikate_484x880_ce39d74eb4.jpg" loading="lazy" /></picture>
+											</div>
+										</div>
+									</div>
+								
+							
+					</li>
+				
+					<li class="dropdown-list position-static " has-children="0" data-uid="65">
+						
+								<a class="dropdown-item dropdown-heading " href="/de/ueber-uns/kontakt/" target="" title="Kontakt">Kontakt</a>
+								
+							
+					</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+
+			
+		</li>
+	
+	<li class="nav-item dropdown language-dropdown">
+		
+
+
+
+	
+		
+		<button id="language-button" class="nav-link dropdown-toggle language-switch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Language switch">DE</button>
+	
+
+	
+
+
+<div id="language-bar" class="dropdown-menu language-dropdown-menu">
+	<ul>
+		
+			
+				
+					
+				
+			
+		
+			
+				
+					
+						<li class="dropdown-list ">
+							<a class="dropdown-item" href="/en/404/" hreflang="en-US" title="EN">EN</a>
+						</li>
+					
+				
+			
+		
+	</ul>
+</div>
+
+
+	</li>
+</ul>
+
+						
+					<a href="https://computop.com/payment-insights/de" class="payment-insights btn btn-secondary d-sm-none mb-8 px-6" title="Payment Insights">
+						Payment Insights
+					</a>
+				</div>
+				<ul class="navbar-nav navbar-right">
+					<li class="nav-item search-button-wrapper">
+						<button id="search-button" class="search-button btn" type="button" data-bs-toggle="collapse"
+								data-bs-target="#searchBar" aria-controls="searchBar" aria-expanded="false"
+								aria-label="Toggle navigation">
+							<i class="fa-search"></i>
+						</button>
+						<div id="searchBar" class="search-bar collapse">
+							<div class="container">
+								<div class="tx-solr">
+    
+	
+	<div class="tx-solr-search-form">
+		<form method="get" class="tx-solr-form-inline" action="/de/suche/" data-suggest="/de/suche/solr.jsonp" data-suggest-header="Top Treffer" accept-charset="utf-8">
+			
+
+			<label for="search-bar-q" class="mb-lg-4 text-uppercase search-header">
+				Suche
+			</label>
+			<input type="text" id="search-bar-q"
+				   class="tx-solr-q js-solr-q tx-solr-suggest tx-solr-suggest-focus form-control px-0 text-uppercase text-white rounded-0 bg-transparent"
+				   name="tx_solr[q]" value=""
+				   placeholder="Begriff Eingabe"
+				   data-autocomplete-empty-message="Keine Suchergebnisse"/>
+		</form>
+	</div>
+
+
+</div>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#rsm" class="navbar-toggler btn" aria-controls="navbar" aria-label="Toggle navigation">
+							<span class="navbar-toggler__bar"></span>
+							<span class="navbar-toggler__bar"></span>
+							<span class="navbar-toggler__bar"></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+
+	
+	<main>
+		<!--TYPO3SEARCH_begin-->
+		<div class="intro-section">
+			
+		</div>
+
+		<div class="main-content">
+			
+
+
+
+
+
+		
+				<section id="c59473" class="content sg-area sg-area-image-container frame frame-default frame-type-gridelements_pi1 frame-layout-0 transparent-bg   frame-space-before-none frame-space-after-negative-extra-large">
+					<div class="sg-area-background-image" style="background-image: url(/fileadmin/user_upload/404/Background-404.webp);"></div>
+					<div class="sg-area-backdrop"></div>
+					
+	
+	<div class="container">
+		
+			<div class="default-content-element">
+				
+
+	
+			
+		
+
+
+
+				
+
+
+
+			</div>
+		
+		
+
+
+        
+            
+
+
+
+		
+		<div id="c59476" class="frame frame-default no-files frame-type-textmedia frame-layout-0 frame-space-before-extra-large default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+    
+        <header>
+            
+
+	
+			<h1 class=" h3">
+				<font color="#fff">ERROR 404</font>
+			</h1>
+		
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-left ce-above">
+        
+            
+
+
+
+        
+
+        
+                
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+
+
+        
+            
+
+
+
+		
+		<div id="c59475" class="frame frame-default no-files frame-type-textmedia frame-layout-0 frame-space-after-medium default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+    
+        <header>
+            
+
+	
+			<p class=" h2">
+				<font color="#fff"><b>Houston, wir haben ein Problem!</b></font>
+			</p>
+		
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+
+
+        
+
+        
+                <div class="ce-bodytext">
+                    
+                    <p><font color="#fff">Die Seite, die Sie aufrufen möchten, wurde nicht gefunden.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="text-center">&nbsp;</p>
+<p class="text-center"><a href="/de/" class="btn btn-secondary">ZURÜCK ZUR&nbsp;PAYMENT BASE</a></p>
+                </div>
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+	</div>
+
+				</section>
+			
+	
+
+
+
+		</div>
+		<!--TYPO3SEARCH_end-->
+	</main>
+
+
+	<footer id="footer" class="footer">
+		<div class="default-content-element">
+			
+	
+
+
+	
+
+
+	
+
+
+
+
+
+		<div id="c29505" class="default-content-element frame frame-default frame-type-gridelements_pi1 frame-layout-0 ">
+			
+			
+			<div class="row  " data-colcount="2">
+				
+	
+			
+					<div class="col-md-6 col-sm-12 col-xs-12 ">
+						
+
+
+        
+            
+
+
+
+		<div id="c29506" class="default-content-element frame frame-default frame-type-gridelements_pi1 frame-layout-0 ">
+			
+			
+			<div class="row  " data-colcount="3">
+				
+	
+			
+					
+					
+					
+					<div class="col-md-4 
+						
+								col-sm-4
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29528" class="frame frame-default no-files frame-type-menu_subpages frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+				
+
+    
+        <header>
+            
+
+	
+			<p class="">
+				<a href="/de/loesungen/">Lösungen</a>
+			</p>
+		
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+			
+			
+
+    
+        <ul>
+            
+                <li>
+                    <a href="/de/omnichannel-payment/" title="Omnichannel Payment">
+                        <span>Omnichannel Payment</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/point-of-sale/" title="Point of Sale">
+                        <span>Point of Sale</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/analytics-reports/" title="Analytics &amp; Reports">
+                        <span>Analytics &amp; Reports</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/betrugspraevention/" title="Betrugsprävention">
+                        <span>Betrugsprävention</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/integration/" title="Integration">
+                        <span>Integration</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/zahlarten/" title="Zahlarten">
+                        <span>Zahlarten</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/branchen/" title="Branchen">
+                        <span>Branchen</span>
+                    </a>
+                </li>
+            
+        </ul>
+    
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-4 
+						
+								col-sm-4
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29529" class="frame frame-default no-files frame-type-menu_subpages frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+				
+
+    
+        <header>
+            
+
+	
+			<p class="">
+				<a href="/de/branchen/">Branchen</a>
+			</p>
+		
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+			
+			
+
+    
+        <ul>
+            
+                <li>
+                    <a href="/de/branchen/banken-whitelabel/" title="Banken / Whitelabel">
+                        <span>Banken / Whitelabel</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/branchen/digital-entertainment/" title="Digital Entertainment">
+                        <span>Digital Entertainment</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/branchen/elektronik/" title="Elektronik">
+                        <span>Elektronik</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/branchen/fashion-lifestyle/" title="Fashion &amp; Lifestyle">
+                        <span>Fashion &amp; Lifestyle</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/branchen/healthcare/" title="Healthcare">
+                        <span>Healthcare</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/branchen/hospitality/" title="Hospitality">
+                        <span>Hospitality</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/branchen/mobility/" title="Mobility">
+                        <span>Mobility</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/branchen/versicherungen/" title="Versicherungen">
+                        <span>Versicherungen</span>
+                    </a>
+                </li>
+            
+        </ul>
+    
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-4 
+						
+								col-sm-4
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29530" class="frame frame-default no-files frame-type-menu_subpages frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+				
+
+    
+        <header>
+            
+
+	
+			<p class="">
+				<a href="/de/support/">Support</a>
+			</p>
+		
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+			
+			
+
+    
+        <ul>
+            
+                <li>
+                    <a href="/de/support/ansprechpartner/" title="Ansprechpartner">
+                        <span>Ansprechpartner</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://developer.computop.com" title="Developer">
+                        <span>Developer</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/support/developers-downloads/" title="Downloads">
+                        <span>Downloads</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://support.computop.com/hc/de" title="Kundenservice">
+                        <span>Kundenservice</span>
+                    </a>
+                </li>
+            
+        </ul>
+    
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+				
+		
+
+			</div>
+		</div>
+	
+
+
+
+        
+    
+
+
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 ">
+						
+
+
+        
+            
+
+
+
+		<div id="c29507" class="default-content-element frame frame-default frame-type-gridelements_pi1 frame-layout-0 ">
+			
+			
+			<div class="row  " data-colcount="3">
+				
+	
+			
+					
+					
+					
+					<div class="col-md-4 
+						
+								col-sm-4
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29531" class="frame frame-default no-files frame-type-menu_subpages frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+				
+
+    
+        <header>
+            
+
+	
+			<p class="">
+				<a href="/de/karriere/">Karriere</a>
+			</p>
+		
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+			
+			
+
+    
+        <ul>
+            
+                <li>
+                    <a href="/de/karriere/benefits/" title="Benefits">
+                        <span>Benefits</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/karriere/bewerbungsablauf/" title="Bewerbungsablauf">
+                        <span>Bewerbungsablauf</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/karriere/freie-stellen/" title="Freie Stellen">
+                        <span>Freie Stellen</span>
+                    </a>
+                </li>
+            
+        </ul>
+    
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-4 
+						
+								col-sm-4
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29532" class="frame frame-default no-files frame-type-menu_subpages frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+				
+
+    
+        <header>
+            
+
+	
+			<p class="">
+				<a href="/de/ueber-uns/das-unternehmen/">Über uns</a>
+			</p>
+		
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+			
+			
+
+    
+        <ul>
+            
+                <li>
+                    <a href="/de/ueber-uns/das-unternehmen/" title="Das Unternehmen">
+                        <span>Das Unternehmen</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/ueber-uns/newsletter/" title="Newsletter">
+                        <span>Newsletter</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/ueber-uns/presse/" title="Presse">
+                        <span>Presse</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/ueber-uns/das-unternehmen/zertifizierungen/" title="Zertifizierungen">
+                        <span>Zertifizierungen</span>
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/de/ueber-uns/kontakt/" title="Kontakt">
+                        <span>Kontakt</span>
+                    </a>
+                </li>
+            
+        </ul>
+    
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-4 
+						
+								col-sm-4
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+	
+	
+		<div class="dce-feed-container frame-type-menu_subpages">
+			<header>
+				<h2>
+					Payment Insights
+				</h2>
+			</header>
+			<ul>
+				
+					<li><a href="https://computop.com/payment-insights/de/case-study/punkt-um-punkt-dm-integriert-als-erster-haendler-payback-pay-im-e-commerce/" target="_blank"><span>Punkt um Punkt: dm integriert als erster Händler Payback Pay im E-Commerce</span></a></li>
+				
+					<li><a href="https://computop.com/payment-insights/de/case-study/paypal-und-computop-15-jahre-technologie-partnerschaft-im-e-commerce/" target="_blank"><span>PayPal und Computop: 15 Jahre Technologie-Partnerschaft im E-Commerce</span></a></li>
+				
+			</ul>
+		</div>
+	
+
+
+
+
+
+        
+    
+
+
+					</div>
+				
+		
+
+			</div>
+		</div>
+	
+
+
+
+        
+    
+
+
+					</div>
+				
+		
+
+			</div>
+		</div>
+	
+
+
+
+
+
+
+		
+		<div id="c29508" class="frame frame-default no-files frame-type-div frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+			
+
+    <hr class="ce-div" />
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+
+
+
+		<div id="c29509" class="default-content-element frame frame-default frame-type-gridelements_pi1 frame-layout-0 ">
+			
+			
+			<div class="row  " data-colcount="2">
+				
+	
+			
+					<div class="col-md-8 col-sm-6 col-xs-12 ">
+						
+
+
+        
+            
+
+
+
+		<div id="c29510" class="default-content-element frame frame-default frame-type-gridelements_pi1 frame-layout-0 ">
+			
+			
+			<div class="row contact-info " data-colcount="3">
+				
+	
+			
+					
+					
+					
+					<div class="col-md-4 
+						
+								col-sm-12
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c32378" class="frame frame-default no-files frame-type-html frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+			
+
+    <p class="h5">DE</p>
+<p>Computop Paygate GmbH<br />
+Schwarzenbergstr. 4<br />
+96050 Bamberg<br />
+T&nbsp;<a id="ActivePhoneLinkFooter" href="tel:0049951980090">+49 (0)951 98009-0</a><br />
+E&nbsp;<a id="ActiveMailLinkFooter" href="mailto:sales@computop.com">sales@computop.com</a></p>
+
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-4 
+						
+								col-sm-12
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c32377" class="frame frame-default no-files frame-type-html frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+			
+
+    <p class="h5">UK</p>
+<p>Computop Ltd.<br />
+60 Cannon Street<br />
+London<br />
+EC4N 6NP<br />
+ENGLAND<br />
+T&nbsp;<a id="ActivePhoneLinkFooter" href="tel:00441437808050">+44 1437-808050</a><br />
+E&nbsp;<a id="ActiveMailLinkFooter" href="mailto:uk@computop.com">uk@computop.com</a></p>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-4 
+						
+								col-sm-12
+							
+					 col-xs-12 col-xxs-12 ">
+						
+					</div>
+				
+		
+
+			</div>
+		</div>
+	
+
+
+
+        
+    
+
+
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29512" class="frame frame-default no-files frame-type-header frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+				
+
+    
+        <header>
+            
+
+	
+			<p class=" h5">
+				Sie finden uns auf:
+			</p>
+		
+
+
+
+            
+
+
+
+            
+
+
+
+        </header>
+    
+
+
+
+			
+			
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+
+
+        
+            
+
+
+
+		<div id="c29511" class="default-content-element frame frame-default frame-type-gridelements_pi1 frame-layout-0  frame-space-before-extra-small">
+			
+			
+			<div class="row  " data-colcount="4">
+				
+	
+			<div class="col-2 col-md-3 col-lg-2 col-xl-2">
+				
+
+
+        
+            
+
+
+
+		
+		<div id="c29520" class="frame frame-default frame-type-textmedia frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+    
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+    <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+        
+            <div class="ce-outer">
+                <div class="ce-inner">
+        
+        
+            <div class="ce-row">
+                
+                    
+                        <div class="ce-column">
+                            
+
+        
+	<figure class="image">
+		
+				<a href="https://www.linkedin.com/company/computop/" target="_blank" rel="noreferrer">
+					
+	<picture><img  class="image-embed-item " width="30" height="30" alt="Folgen Sie uns bei LinkedIn" src="/fileadmin/user_upload/Startseite/Symbole/social_media/linkedin_icon.svg" loading="lazy" /></picture>
+
+
+				</a>
+			
+		
+	</figure>
+
+
+    
+
+
+                        </div>
+                    
+                
+            </div>
+        
+        
+                </div>
+            </div>
+        
+    </div>
+
+
+
+        
+
+        
+                
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+			</div>
+			<div class="col-2 col-md-3 col-lg-2 col-xl-2">
+				
+
+
+        
+            
+
+
+
+		
+		<div id="c29521" class="frame frame-default frame-type-textmedia frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+    
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+    <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+        
+            <div class="ce-outer">
+                <div class="ce-inner">
+        
+        
+            <div class="ce-row">
+                
+                    
+                        <div class="ce-column">
+                            
+
+        
+	<figure class="image">
+		
+				<a href="https://www.instagram.com/computop_paygate/">
+					
+	<picture><img  class="image-embed-item " width="30" height="30" alt="" src="/fileadmin/user_upload/Startseite/Symbole/social_media/instagram-icon-v2-01.svg" loading="lazy" /></picture>
+
+
+				</a>
+			
+		
+	</figure>
+
+
+    
+
+
+                        </div>
+                    
+                
+            </div>
+        
+        
+                </div>
+            </div>
+        
+    </div>
+
+
+
+        
+
+        
+                
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+			</div>
+			<div class="col-2 col-md-3 col-lg-2 col-xl-2">
+				
+
+
+        
+            
+
+
+
+		
+		<div id="c29523" class="frame frame-default frame-type-textmedia frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+    
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+    <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+        
+            <div class="ce-outer">
+                <div class="ce-inner">
+        
+        
+            <div class="ce-row">
+                
+                    
+                        <div class="ce-column">
+                            
+
+        
+	<figure class="image">
+		
+				<a href="https://www.youtube.com/user/ComputopTV" target="_blank" rel="noreferrer">
+					
+	<picture><img  class="image-embed-item " width="30" height="30" alt="Folgen Sie uns bei Youtube" src="/fileadmin/user_upload/Startseite/Symbole/social_media/youtube_icon.svg" loading="lazy" /></picture>
+
+
+				</a>
+			
+		
+	</figure>
+
+
+    
+
+
+                        </div>
+                    
+                
+            </div>
+        
+        
+                </div>
+            </div>
+        
+    </div>
+
+
+
+        
+
+        
+                
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+			</div>
+			<div class="col-2 col-md-3 col-lg-2 col-xl-2">
+				
+
+
+        
+            
+
+
+
+		
+		<div id="c29522" class="frame frame-default frame-type-textmedia frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+    
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+    <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+        
+            <div class="ce-outer">
+                <div class="ce-inner">
+        
+        
+            <div class="ce-row">
+                
+                    
+                        <div class="ce-column">
+                            
+
+        
+	<figure class="image">
+		
+				<a href="https://www.xing.com/pages/computop">
+					
+	<picture><img  class="image-embed-item " width="30" height="30" alt="Folgen Sie uns bei Xing" src="/fileadmin/user_upload/Startseite/Symbole/social_media/xing_icon.svg" loading="lazy" /></picture>
+
+
+				</a>
+			
+		
+	</figure>
+
+
+    
+
+
+                        </div>
+                    
+                
+            </div>
+        
+        
+                </div>
+            </div>
+        
+    </div>
+
+
+
+        
+
+        
+                
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+			</div>
+		
+
+			</div>
+		</div>
+	
+
+
+
+        
+    
+
+
+					</div>
+				
+		
+
+			</div>
+		</div>
+	
+
+
+
+		</div>
+		<div id="copyright" class="copyright">
+			<div class="container">
+				
+
+
+
+		<div id="c29513" class="default-content-element frame frame-default frame-type-gridelements_pi1 frame-layout-0 ">
+			
+			
+			<div class="row  " data-colcount="2">
+				
+	
+			
+					<div class="col-md-6 col-sm-6 col-xs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29515" class="frame frame-default no-files frame-type-textmedia frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+
+
+        
+
+        
+                <div class="ce-bodytext">
+                    
+                    <p>© Computop – 2026</p>
+                </div>
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12 ">
+						
+
+
+        
+            
+
+
+
+		<div id="c29514" class="default-content-element frame frame-default frame-type-gridelements_pi1 frame-layout-0 ">
+			
+			
+			<div class="row flex-footer " data-colcount="4">
+				
+	
+			
+					
+					
+					
+					<div class="col-md-3 
+						
+								col-sm-3
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29516" class="frame frame-default no-files frame-type-textmedia frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+
+
+        
+
+        
+                <div class="ce-bodytext">
+                    
+                    <p class="text-center"><a href="/de/rechtliche-hinweise/">Rechtliche Hinweise</a></p>
+                </div>
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-3 
+						
+								col-sm-3
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29517" class="frame frame-default no-files frame-type-textmedia frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+
+
+        
+
+        
+                <div class="ce-bodytext">
+                    
+                    <p class="text-center"><a href="/de/impressum/">Impressum</a></p>
+                </div>
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-3 
+						
+								col-sm-3
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29518" class="frame frame-default no-files frame-type-textmedia frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+
+
+        
+
+        
+                <div class="ce-bodytext">
+                    
+                    <p class="text-center"><a href="/de/datenschutz/">Datenschutz</a></p>
+                </div>
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+					<div class="col-md-3 
+						
+								col-sm-3
+							
+					 col-xs-12 col-xxs-12 ">
+						
+
+
+        
+            
+
+
+
+		
+		<div id="c29519" class="frame frame-default no-files frame-type-textmedia frame-layout-0 default-content-element">
+			
+				
+
+
+
+			
+			
+
+    
+        
+
+
+
+    
+
+
+			
+
+    <div class="ce-textpic ce-center ce-above">
+        
+            
+
+
+
+        
+
+        
+                <div class="ce-bodytext">
+                    
+                    <p class="text-center"><a href="/de/agb/">AGB</a></p>
+                </div>
+            
+
+        
+    </div>
+
+
+			
+				
+
+
+
+			
+			
+				
+
+
+
+			
+		</div>
+	
+
+        
+    
+
+
+					</div>
+				
+		
+
+			</div>
+		</div>
+	
+
+
+
+        
+    
+
+
+					</div>
+				
+		
+
+			</div>
+		</div>
+	
+
+
+
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script defer src="/_assets/edd904b3072f92be628aca13b9af53d8/JavaScript/Dist/main.bundled.min.js?1761142228" crossorigin="anonymous"></script>
+<script defer src="/typo3temp/scriptmerger/uncompressed/7f6f4007061a3385249e7e32f51dfafe-7f6f4007061a3385249e7e32f51dfafe.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
