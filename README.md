@@ -9,7 +9,21 @@ To provide **comprehensive**, **production-ready**, and **copy-pasteable** proce
 
 | Component | Description | Status |
 |-----------|-------------|--------|
+| [Ansible](./ansible/) | Configuration Management | ✅ Active |
+| [CI/CD](./cicd/) | Continuous Integration & Deployment | ✅ Active |
 | [CNPG](./cnpg/) | CloudNativePG (PostgreSQL) Cluster Management | ✅ Active |
+| [Compute](./compute/) | Virtual Machines & Compute Resources | ✅ Active |
+| [Database](./database/) | Database Management Systems | ✅ Active |
+| [Elasticsearch](./elasticsearch/) | Search & Analytics Engine | ✅ Active |
+| [FinOps](./finops/) | Cloud Financial Management | ✅ Active |
+| [General](./general/) | General Operational Guides | ✅ Active |
+| [Kafka](./kafka/) | Event Streaming Platform | ✅ Active |
+| [Kubernetes](./kubernetes/) | Container Orchestration | ✅ Active |
+| [Networking](./networking/) | Network & Connectivity | ✅ Active |
+| [Observability](./observability/) | Monitoring, Logging & Tracing | ✅ Active |
+| [Security](./security/) | Security Protocols & Procedures | ✅ Active |
+| [Storage](./storage/) | Block & Object Storage | ✅ Active |
+| [Terraform](./terraform/) | Infrastructure as Code | ✅ Active |
 
 ## 🚀 Getting Started
 
