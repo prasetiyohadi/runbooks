@@ -3,6 +3,7 @@
 ## Learning Goals
 
 By the end of this guide, you will understand:
+
 - How database indexes work and why they're essential for query performance
 - Different types of indexes (Primary Key, Unique, Composite, Full-Text)
 - How to define proper indexes based on cardinality and query patterns
@@ -14,15 +15,15 @@ By the end of this guide, you will understand:
 
 ## Quick Comparison: MySQL vs PostgreSQL
 
-| Feature | MySQL | PostgreSQL |
-|---------|-------|-----------|
-| Default Index | B-Tree | B-Tree |
-| Concurrent Index Creation | No (use tools) | Yes (`CONCURRENTLY`) |
-| Unique Indexes | ✅ Yes | ✅ Yes |
-| Full-Text Indexes | ✅ Yes | ✅ Yes (GIN) |
-| Index Types | B-Tree, Hash, Full-Text | B-Tree, Hash, GiST, SP-GiST, GIN, BRIN |
-| Query Planning | EXPLAIN | EXPLAIN (more detailed) |
-| Scan Methods | Sequential, Index, Range | Sequential, Index, Bitmap, Index-Only |
+| Feature                   | MySQL                    | PostgreSQL                             |
+| ------------------------- | ------------------------ | -------------------------------------- |
+| Default Index             | B-Tree                   | B-Tree                                 |
+| Concurrent Index Creation | No (use tools)           | Yes (`CONCURRENTLY`)                   |
+| Unique Indexes            | ✅ Yes                   | ✅ Yes                                 |
+| Full-Text Indexes         | ✅ Yes                   | ✅ Yes (GIN)                           |
+| Index Types               | B-Tree, Hash, Full-Text  | B-Tree, Hash, GiST, SP-GiST, GIN, BRIN |
+| Query Planning            | EXPLAIN                  | EXPLAIN (more detailed)                |
+| Scan Methods              | Sequential, Index, Range | Sequential, Index, Bitmap, Index-Only  |
 
 ---
 
@@ -112,12 +113,12 @@ SELECT * FROM articles WHERE MATCH(title, body) AGAINST('database indexing');
 
 Cardinality measures **how many unique values exist in a column**. High cardinality columns are better candidates for indexes.
 
-| Column | Unique Values | Total Rows | Cardinality | Good Index? |
-|--------|---------------|-----------|-------------|------------|
-| `gender` | 2 | 1M | Very Low | ❌ No |
-| `user_id` | 1M | 1M | Very High | ✅ Yes |
-| `created_at` | 500k | 1M | High | ✅ Yes |
-| `status` | 5 | 1M | Very Low | ❌ No |
+| Column       | Unique Values | Total Rows | Cardinality | Good Index? |
+| ------------ | ------------- | ---------- | ----------- | ----------- |
+| `gender`     | 2             | 1M         | Very Low    | ❌ No       |
+| `user_id`    | 1M            | 1M         | Very High   | ✅ Yes      |
+| `created_at` | 500k          | 1M         | High        | ✅ Yes      |
+| `status`     | 5             | 1M         | Very Low    | ❌ No       |
 
 ### Finding Cardinality
 
@@ -147,6 +148,7 @@ ORDER BY clmn_c DESC;
 Instead, **order by descending cardinality**:
 
 1. Find individual cardinalities:
+
    ```sql
    CREATE INDEX idx_a (clmn_a);
    CREATE INDEX idx_b (clmn_b);
@@ -155,6 +157,7 @@ Instead, **order by descending cardinality**:
    ```
 
 2. If `clmn_b` has cardinality 226M, `clmn_a` has 6.7M, `clmn_c` has 720, then create:
+
    ```sql
    ALTER TABLE tbl_name ADD INDEX idx_composite (clmn_b, clmn_a, clmn_c);
    ```
@@ -177,7 +180,7 @@ The index stores column values in sorted order with row pointers, enabling quick
 
 ### Composite Index Behavior
 
-![Composite Index Concept](./assets/composite-index.webp)
+![Composite Index Concept](./assets/composite-index.png)
 
 Composite indexes create a multi-level sort order, making them efficient for queries that filter on multiple columns in the index order.
 
@@ -187,21 +190,21 @@ Composite indexes create a multi-level sort order, making them efficient for que
 
 ### Advantages ✅
 
-| Benefit | Impact |
-|---------|--------|
-| **Query Optimization** | 10-100x faster SELECT queries |
-| **Data Integrity** | Unique/Primary Key constraints prevent duplicates |
-| **Text Search** | Full-text indexes enable complex text queries |
-| **Reduced Locks** | Faster queries = less table contention |
+| Benefit                | Impact                                            |
+| ---------------------- | ------------------------------------------------- |
+| **Query Optimization** | 10-100x faster SELECT queries                     |
+| **Data Integrity**     | Unique/Primary Key constraints prevent duplicates |
+| **Text Search**        | Full-text indexes enable complex text queries     |
+| **Reduced Locks**      | Faster queries = less table contention            |
 
 ### Trade-offs ⚠️
 
-| Cost | Impact |
-|------|--------|
-| **Disk Space** | Index files can be 20-50% of table size on large tables |
-| **Write Performance** | INSERT/UPDATE/DELETE operations become slower (must update indexes) |
-| **Memory Usage** | Large indexes consume RAM and buffer pool space |
-| **Maintenance Overhead** | Fragmented indexes degrade performance over time |
+| Cost                     | Impact                                                              |
+| ------------------------ | ------------------------------------------------------------------- |
+| **Disk Space**           | Index files can be 20-50% of table size on large tables             |
+| **Write Performance**    | INSERT/UPDATE/DELETE operations become slower (must update indexes) |
+| **Memory Usage**         | Large indexes consume RAM and buffer pool space                     |
+| **Maintenance Overhead** | Fragmented indexes degrade performance over time                    |
 
 ---
 
@@ -261,11 +264,11 @@ Adding an index to a large table **locks it completely**, preventing all reads a
 
 #### MySQL: Use Schema Migration Tools
 
-| Tool | Feature | Use Case |
-|------|---------|----------|
-| [gh-ost](https://github.com/github/gh-ost) | Online DDL, GitHub's tool | Large tables (100GB+) |
+| Tool                                                                    | Feature                          | Use Case                |
+| ----------------------------------------------------------------------- | -------------------------------- | ----------------------- |
+| [gh-ost](https://github.com/github/gh-ost)                              | Online DDL, GitHub's tool        | Large tables (100GB+)   |
 | [pt-online-schema-change](https://www.percona.com/doc/percona-toolkit/) | Percona Toolkit, proven & stable | Enterprise environments |
-| [LHM](https://github.com/soundcloud/lhm) | SoundCloud's tool, lightweight | Medium tables |
+| [LHM](https://github.com/soundcloud/lhm)                                | SoundCloud's tool, lightweight   | Medium tables           |
 
 Example with gh-ost:
 
@@ -314,7 +317,8 @@ ALTER TABLE products ADD INDEX idx_category (category);
 EXPLAIN SELECT * FROM products WHERE category = 'Electronics';
 ```
 
-**Expected Output**: 
+**Expected Output**:
+
 - Without index: `type: ALL`, `possible_keys: NULL`
 - With index: `type: ref`, `possible_keys: idx_category`
 
@@ -432,14 +436,14 @@ CREATE INDEX CONCURRENTLY idx_new ON large_table (column);
 
 ## 2. PostgreSQL Index Types
 
-| Type | Use Case | Example |
-|------|----------|---------|
-| **B-Tree** | Default, most common | `CREATE INDEX idx ON table (column)` |
-| **Hash** | Equality comparisons | `CREATE INDEX idx USING HASH ON table (column)` |
-| **GiST** | Geometric types, full-text | `CREATE INDEX idx USING GIST ON table USING GIST (column)` |
-| **SP-GiST** | Partitioned space-partitioning | Spatial data with clustering |
-| **GIN** | Full-text search, arrays | `CREATE INDEX idx USING GIN ON table (column)` |
-| **BRIN** | Large tables, sequential | `CREATE INDEX idx USING BRIN ON table (column)` |
+| Type        | Use Case                       | Example                                                    |
+| ----------- | ------------------------------ | ---------------------------------------------------------- |
+| **B-Tree**  | Default, most common           | `CREATE INDEX idx ON table (column)`                       |
+| **Hash**    | Equality comparisons           | `CREATE INDEX idx USING HASH ON table (column)`            |
+| **GiST**    | Geometric types, full-text     | `CREATE INDEX idx USING GIST ON table USING GIST (column)` |
+| **SP-GiST** | Partitioned space-partitioning | Spatial data with clustering                               |
+| **GIN**     | Full-text search, arrays       | `CREATE INDEX idx USING GIN ON table (column)`             |
+| **BRIN**    | Large tables, sequential       | `CREATE INDEX idx USING BRIN ON table (column)`            |
 
 ### Unique Indexes
 
@@ -473,12 +477,12 @@ EXPLAIN SELECT * FROM tenk1;
 
 The numbers in parentheses represent (left to right):
 
-| Metric | Meaning |
-|--------|---------|
-| **Start-up cost** | Time before output can begin (e.g., sorting) |
-| **Total cost** | Estimated total time if plan runs to completion |
-| **Rows** | Estimated number of rows output |
-| **Width** | Estimated average width of rows in bytes |
+| Metric            | Meaning                                         |
+| ----------------- | ----------------------------------------------- |
+| **Start-up cost** | Time before output can begin (e.g., sorting)    |
+| **Total cost**    | Estimated total time if plan runs to completion |
+| **Rows**          | Estimated number of rows output                 |
+| **Width**         | Estimated average width of rows in bytes        |
 
 ---
 
@@ -496,7 +500,7 @@ CREATE TABLE demotable (num NUMERIC, id INT);
 CREATE INDEX demoidx ON demotable(num);
 
 -- Insert 1M rows
-INSERT INTO demotable 
+INSERT INTO demotable
   SELECT random() * 1000, generate_series(1, 1000000);
 
 ANALYZE;  -- Update table statistics
@@ -511,6 +515,7 @@ EXPLAIN SELECT * FROM demotable WHERE num < 21000;
 ```
 
 **When Used**:
+
 - No index available on predicate column
 - Query returns majority of rows (sequential I/O cheaper than random I/O)
 
@@ -529,6 +534,7 @@ EXPLAIN SELECT * FROM demotable WHERE num = 21000;
 ```
 
 **Two-Step Process**:
+
 1. Use index to find TID (tuple identifier) of matching rows
 2. Fetch data from heap page using TID
 
@@ -549,6 +555,7 @@ EXPLAIN SELECT num FROM demotable WHERE num = 21000;
 ```
 
 **Requirements**:
+
 - Query must fetch only columns in the index
 - All tuples on accessed pages must be visible (no visibility checks needed)
 
@@ -569,6 +576,7 @@ EXPLAIN SELECT * FROM demotable WHERE num < 210;
 ```
 
 **Process**:
+
 1. **Bitmap Index Scan**: Fetch all matching TIDs from index, create bitmap (page numbers + offsets)
 2. **Bitmap Heap Scan**: Sort bitmap by page number, scan heap sequentially by page
 
@@ -593,12 +601,14 @@ EXPLAIN SELECT num FROM demotable WHERE num < 210;
 ## 5. PostgreSQL vs MySQL Query Plans
 
 **MySQL EXPLAIN Output**:
+
 ```
 | id | select_type | table | type | possible_keys | key | rows | filtered | Extra |
 |  1 | SIMPLE      | users | ref  | idx_email     | idx | 1    | 100%     | NULL  |
 ```
 
 **PostgreSQL EXPLAIN Output**:
+
 ```
 Seq Scan on users
   Filter: (email = 'test@example.com')
@@ -606,6 +616,7 @@ Seq Scan on users
 ```
 
 **Key Differences**:
+
 - PostgreSQL shows tree of operations (parents/children)
 - PostgreSQL estimates cost in arbitrary units (not rows examined)
 - PostgreSQL supports more scan types (Bitmap, Index-Only, etc.)
@@ -627,7 +638,7 @@ CREATE TABLE person (
 
 -- Generate 10 million rows
 INSERT INTO person (name, salary, age)
-SELECT 
+SELECT
   UPPER(SUBSTR(MD5(RANDOM()::TEXT), 1, 6)),
   FLOOR(RANDOM() * (1000 - 100 + 1)) + 100,
   FLOOR(RANDOM() * (60 - 20 + 1)) + 20
@@ -698,12 +709,14 @@ EXPLAIN SELECT * FROM person WHERE age > 20;
 ## 7. Additional Resources
 
 ### MySQL
+
 - [MySQL SHOW INDEX Documentation](https://dev.mysql.com/doc/refman/8.0/en/show-index.html)
 - [MySQL EXPLAIN Documentation](https://dev.mysql.com/doc/refman/8.0/en/explain.html)
 - [Percona Toolkit](https://www.percona.com/doc/percona-toolkit/)
 - [gh-ost: Online Schema Migration](https://github.com/github/gh-ost)
 
 ### PostgreSQL
+
 - [PostgreSQL Index Types](https://www.postgresql.org/docs/current/indexes-types.html)
 - [PostgreSQL CREATE INDEX Concurrently](https://www.postgresql.org/docs/current/sql-createindex.html)
 - [PostgreSQL EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html)
@@ -717,3 +730,4 @@ EXPLAIN SELECT * FROM person WHERE age > 20;
 2. **Practice** creating and analyzing indexes locally with Docker
 3. **Monitor** slow queries in production using respective tools
 4. **Iterate** based on actual query patterns and performance metrics
+
