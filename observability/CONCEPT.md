@@ -5,6 +5,7 @@
 This document provides a comprehensive guide to observability fundamentals for engineers, covering metrics collection, alerting strategies, distributed tracing, and log aggregation. Observability enables teams to understand system behavior and respond to incidents quickly.
 
 **Core Topics**:
+
 - Metrics (Prometheus, Datadog, Grafana)
 - Alerting (rules, escalation, on-call)
 - Logging (ELK, Splunk, CloudLogging)
@@ -40,13 +41,13 @@ This document provides a comprehensive guide to observability fundamentals for e
 
 ### Monitoring vs Observability
 
-| Aspect | Monitoring | Observability |
-|--------|-----------|---|
-| **Approach** | Predefined metrics | All possible data |
-| **Questions** | Are things working? | Why did this break? |
-| **Output** | Dashboards, Alerts | Traces, insights |
-| **Cost** | Lower (aggregated) | Higher (detailed) |
-| **When to use** | Production systems | Development, debugging |
+| Aspect          | Monitoring          | Observability          |
+| --------------- | ------------------- | ---------------------- |
+| **Approach**    | Predefined metrics  | All possible data      |
+| **Questions**   | Are things working? | Why did this break?    |
+| **Output**      | Dashboards, Alerts  | Traces, insights       |
+| **Cost**        | Lower (aggregated)  | Higher (detailed)      |
+| **When to use** | Production systems  | Development, debugging |
 
 ---
 
@@ -73,6 +74,7 @@ Alarm thresholds:
 ```
 
 **Tracking Latency**:
+
 ```python
 from datadog import initialize, api
 from dogstatsd import statsd
@@ -160,11 +162,12 @@ Cache saturation:
 
 ## 3. Metric Types & Cardinality
 
-![Metrics Architecture](/runbooks/observability/assets/metrics-architecture.png)
-
 ### 3.1 Metric Types (Prometheus/Datadog)
 
+![Metrics Types](./assets/prometheus-metric-types.png)
+
 #### Counter
+
 ```
 Definition: Only increases, never decreases (or resets on restart)
 Examples: total_requests, errors_count, bytes_processed
@@ -179,6 +182,7 @@ Calculation:
 ```
 
 #### Gauge
+
 ```
 Definition: Can go up or down at any time
 Examples: cpu_usage, memory_bytes, active_connections, temperature
@@ -193,6 +197,7 @@ Dangerous patterns:
 ```
 
 #### Histogram
+
 ```
 Definition: Tracks distribution of values (samples multiple observations)
 Examples: request_latency, response_size, processing_time
@@ -212,6 +217,7 @@ Cardinality impact: 1 histogram = 5 metrics × tag combinations
 ```
 
 #### Distribution
+
 ```
 Definition: Similar to histogram, but computed server-side (less precise)
 Examples: Datadog's alternative to histogram for cost savings
@@ -225,6 +231,8 @@ Datadog Distribution:
 ---
 
 ### 3.2 Metric Cardinality (Critical for Cost)
+
+![Metrics Cardinality](./assets/metrics-cardinality.png)
 
 **Problem**: Each unique combination of tag values = one metric = billing unit
 
@@ -268,6 +276,7 @@ Cost: Unlimited!
 ### 3.3 Cardinality Control Strategies
 
 **Strategy 1: Group by Logic**
+
 ```
 ❌ BAD: Track every path
   /auth/login
@@ -276,7 +285,7 @@ Cost: Unlimited!
   /api/users/2
   /api/orders/123
   ...
-  
+
 ✅ GOOD: Group by prefix
   /auth/*         (authentication APIs)
   /api/*          (API endpoints)
@@ -286,22 +295,24 @@ Cardinality reduction: 1000s → 3
 ```
 
 **Strategy 2: Sample or Aggregate**
+
 ```
 ❌ BAD: Record every HTTP request as separate metric
 
 ✅ GOOD: Aggregate to percentiles
   p50_latency, p95_latency, p99_latency
-  
+
 ✅ GOOD: Sample subset (1 in 10 requests)
   - Reduce volume 10x
   - Still statistically valid
 ```
 
 **Strategy 3: Use Simple Status**
+
 ```
 ❌ BAD: Track status code (too many combinations)
   status: 200, 201, 204, 400, 401, 403, 404, 500, 502, 503, ...
-  
+
 ✅ GOOD: Reduce to success/failure
   status: success (2xx)
   status: client_error (4xx)
@@ -311,11 +322,12 @@ Cardinality reduction: 10+ → 3
 ```
 
 **Strategy 4: Cardinality Budget**
+
 ```
 Set limits and monitor:
   Production service: Max 1000 unique metrics
   Development: Max 500 unique metrics
-  
+
 Alert on cardinality explosion:
   - IF cardinality > budget
   - THEN investigate tag sources
@@ -326,7 +338,7 @@ Alert on cardinality explosion:
 
 ## 4. Metrics Collection: Prometheus Architecture
 
-![Prometheus Diagram](/runbooks/observability/assets/prometheus-diagram.png)
+![Prometheus Architecture](./assets/prometheus-architecture.png)
 
 ### 4.1 Prometheus Components
 
@@ -375,6 +387,7 @@ Alert on cardinality explosion:
 ### 4.2 Exposing Metrics (Pull Model)
 
 **Application exposes metrics endpoint**:
+
 ```
 GET http://app:8080/metrics
 
@@ -409,7 +422,7 @@ sum(rate(http_requests_total[5m])) by (endpoint)
 rate(http_requests_total[5m]) > 100
 
 # Percentile: P95 latency
-histogram_quantile(0.95, 
+histogram_quantile(0.95,
   sum(rate(http_request_duration_seconds_bucket[5m])) by (le)
 )
 
@@ -423,19 +436,20 @@ http_requests_total[1h]
 
 ### 5.1 Datadog vs Prometheus
 
-| Aspect | Prometheus | Datadog |
-|--------|-----------|--------|
-| **Model** | Pull-based | Push + Pull |
-| **Cost** | Free (self-hosted) | Expensive (per metric) |
-| **Storage** | 15 days default | 15 months |
-| **APM** | External (Jaeger) | Built-in |
-| **Setup** | Complex | Simple |
-| **Retention** | Limited | Long-term |
-| **UI** | Basic | Very advanced |
+| Aspect        | Prometheus         | Datadog                |
+| ------------- | ------------------ | ---------------------- |
+| **Model**     | Pull-based         | Push + Pull            |
+| **Cost**      | Free (self-hosted) | Expensive (per metric) |
+| **Storage**   | 15 days default    | 15 months              |
+| **APM**       | External (Jaeger)  | Built-in               |
+| **Setup**     | Complex            | Simple                 |
+| **Retention** | Limited            | Long-term              |
+| **UI**        | Basic              | Very advanced          |
 
 ### 5.2 DogStatsD: Datadog Client
 
 **Push metrics directly to Datadog**:
+
 ```python
 from datadog import initialize, api
 from dogstatsd import statsd
@@ -485,7 +499,7 @@ Example: API metrics with path and status tags
 Counter: api_calls{path=?, status=?}
   path: /auth/login, /auth/logout, /api/users, /api/orders     (4 values)
   status: 200, 400, 500                                         (3 values)
-  
+
   Cardinality = 4 × 3 = 12 unique metrics
 
 Histogram: request_latency{path=?, status=?}
@@ -495,7 +509,7 @@ Histogram: request_latency{path=?, status=?}
     - .max     (maximum)
     - .min     (minimum)
     - .sum     (total)
-  
+
   Cardinality = 12 × 5 = 60 unique metrics
 
 Distribution: response_size{path=?, status=?}
@@ -507,30 +521,31 @@ Distribution: response_size{path=?, status=?}
 
 ## 6. Alerting: Rules and Escalation
 
-![Alerting Flow](/runbooks/observability/assets/alerting-flow.png)
+![Alerting Flow](./assets/alerting-flow.png)
 
 ### 6.1 Alert Rules
 
 **Example: Latency Alert**
+
 ```yaml
 groups:
-- name: application_alerts
-  rules:
-  - alert: HighLatency
-    expr: histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m])) > 0.5
-    for: 5m  # Alert only if condition true for 5 minutes (avoid flapping)
-    annotations:
-      summary: "High P99 latency detected"
-      description: "P99 latency is {{ $value }}s (threshold: 0.5s)"
-    labels:
-      severity: warning
-      team: backend
+  - name: application_alerts
+    rules:
+      - alert: HighLatency
+        expr: histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m])) > 0.5
+        for: 5m # Alert only if condition true for 5 minutes (avoid flapping)
+        annotations:
+          summary: "High P99 latency detected"
+          description: "P99 latency is {{ $value }}s (threshold: 0.5s)"
+        labels:
+          severity: warning
+          team: backend
 
-  - alert: CriticalLatency
-    expr: histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m])) > 1.0
-    for: 2m  # Critical: fire faster
-    labels:
-      severity: critical
+      - alert: CriticalLatency
+        expr: histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m])) > 1.0
+        for: 2m # Critical: fire faster
+        labels:
+          severity: critical
 ```
 
 ### 6.2 Escalation Policy
@@ -568,20 +583,20 @@ groups:
 ```yaml
 # Latency Alert
 - alert: HighLatency
-  expr: histogram_quantile(0.99, ...) > 0.5  # P99 > 500ms
+  expr: histogram_quantile(0.99, ...) > 0.5 # P99 > 500ms
   severity: warning
 
 - alert: CriticalLatency
-  expr: histogram_quantile(0.99, ...) > 1.0  # P99 > 1s
+  expr: histogram_quantile(0.99, ...) > 1.0 # P99 > 1s
   severity: critical
 
 # Error Rate Alert
 - alert: HighErrorRate
-  expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.01  # > 1%
+  expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.01 # > 1%
   severity: warning
 
 - alert: CriticalErrorRate
-  expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.05  # > 5%
+  expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.05 # > 5%
   severity: critical
 
 # Traffic Alert (unusual patterns)
@@ -592,11 +607,11 @@ groups:
 
 # Saturation Alert
 - alert: HighCPU
-  expr: rate(node_cpu_seconds_total[5m]) > 0.8  # > 80%
+  expr: rate(node_cpu_seconds_total[5m]) > 0.8 # > 80%
   severity: warning
 
 - alert: CriticalMemory
-  expr: node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes < 0.1  # < 10% free
+  expr: node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes < 0.1 # < 10% free
   severity: critical
 ```
 
@@ -604,11 +619,12 @@ groups:
 
 ## 7. Logging: ELK Stack & Aggregation
 
-![Logging Architecture](/runbooks/observability/assets/logging-architecture.png)
+![Logging Architecture](./assets/logging-architecture.png)
 
 ### 7.1 Three Types of Logs
 
 **Structured Logs** (Preferred):
+
 ```json
 {
   "timestamp": "2024-01-28T10:30:45.123Z",
@@ -634,24 +650,26 @@ groups:
 ```
 
 **Unstructured Logs** (Bad):
+
 ```
 2024-01-28 10:30:45 order-api ERROR Database connection timeout (trying to order from user) at endpoint /api/orders after 5 seconds
 ```
 
 **Semi-structured Logs** (Acceptable):
+
 ```
 [2024-01-28 10:30:45] ERROR order-api - Database timeout for user_id=user_789 request_id=abc-123
 ```
 
 ### 7.2 Log Levels
 
-| Level | Use Case | Example |
-|-------|----------|---------|
-| **DEBUG** | Development | Variable values, function entry/exit |
-| **INFO** | Important events | User login, request completed, config loaded |
-| **WARN** | Recoverable issues | Retry attempt, resource limit approaching |
-| **ERROR** | Failures | Request failed, service unavailable |
-| **FATAL** | Critical errors | Application crashed, data loss |
+| Level     | Use Case           | Example                                      |
+| --------- | ------------------ | -------------------------------------------- |
+| **DEBUG** | Development        | Variable values, function entry/exit         |
+| **INFO**  | Important events   | User login, request completed, config loaded |
+| **WARN**  | Recoverable issues | Retry attempt, resource limit approaching    |
+| **ERROR** | Failures           | Request failed, service unavailable          |
+| **FATAL** | Critical errors    | Application crashed, data loss               |
 
 ### 7.3 ELK Stack Components
 
@@ -668,7 +686,7 @@ Application → Logstash → Elasticsearch → Kibana (Dashboard)
 
 ## 8. Distributed Tracing: Request Journey
 
-![Distributed Tracing](/runbooks/observability/assets/distributed-tracing.png)
+![Distributed Tracing](./assets/distributed-tracing.png)
 
 **Definition**: Follows a single request through multiple services.
 
@@ -680,7 +698,7 @@ User Request
 │ API Gateway              │  Span 1: api-gateway (10ms)
 │ (trace_id=abc-123)       │    └─ Span 2: auth-service (5ms)
 └──────────────────────────┘         └─ Span 3: db-query (2ms)
-    │                             
+    │
     ├──→ Auth Service               Span 4: order-service (80ms)
     │         │                         ├─ Span 5: validate (10ms)
     │         └──→ Database Query      ├─ Span 6: payment (50ms)
@@ -764,7 +782,7 @@ Good:
   system_cpu_usage_percent         (metric_target_units)
   http_request_duration_seconds    (metric_operation_unit)
   http_requests_total              (metric_type)
-  
+
   container_memory_bytes           (per pod memory)
   database_connections_active      (current count)
   cache_hit_ratio                  (percentage)
@@ -777,7 +795,7 @@ Good:
   - Use consistent tag names (service, environment, region)
   - Keep tag cardinality low (few distinct values)
   - Use tags for operational context
-  
+
 ❌ DON'T:
   - Use high-cardinality tags (user_id, request_id)
   - Use unbounded values (timestamps)
@@ -865,13 +883,13 @@ Alert Design:
 Metric cardinality (most expensive):
   - Each unique metric = billing unit
   - Histogram/distribution = × 5 multiplier
-  
+
 Example cost:
   10,000 unique metrics × $0.10/metric = $1000/month
 
 Log ingestion (high volume):
   - GB of logs stored = billing unit
-  
+
 Example cost:
   100 GB/month × $0.50/GB = $50/month
 

